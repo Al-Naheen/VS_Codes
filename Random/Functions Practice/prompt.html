@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <P> ami chagol </P>
+
+    <p id="hagu"></p>
+
+
+
+    <script>
+        window.onload = (event) => {
+            let person = prompt("Please say something", "Harry Potter");
+            if (person != null) {
+                document.getElementById("hagu").innerHTML =
+                    "Hello " + person + "! How are you today?";
+            }
+        };
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap');
+*{
+    margin: 0 auto;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Asap ;
+    color: white;
+    text-align: center;
+}
+body{
+    background-color: #29272e;
+}
+header{
+    background-color: white;
+    padding: 10px;
+}
+h1{
+    color: #29272e;
+    justify-content: center;
+}
+.nah{
+    font-family: Metal Mania;
+    font-size: 45px;
+    padding: 10px;
+}
+
+.scoreBoard{
+    border: 2px solid black;
+    width: 200px;
+    justify-content: center;
+}
+.badge{
+    background-color: red;
+    font-size: 14px;
+    padding: 2px 10px;
+}
+#user{
+    top: auto;
+}

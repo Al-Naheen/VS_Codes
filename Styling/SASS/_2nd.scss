@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@mixin hagu($bgColor, $colorCng) {
+    color: $colorCng;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Metal Mania', cursive ;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    padding: 0;
+    width: 100%-20%;
+    background-color: $bgColor;
+    text-transform: capitalize;
+    height: 100vh;
+}
+
+// @mixin commoncode {
+//     text-transform: capitalize;
+// }
+
+// @mixin headerCode {
+//     width
+// }

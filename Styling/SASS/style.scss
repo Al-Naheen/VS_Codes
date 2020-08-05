@@ -1,0 +1,35 @@
+@import '2nd';
+$anh: center;
+
+*{
+    text-align: $anh;
+}
+
+.container{
+    @include hagu(rgb(16, 10, 44), rgb(0, 255, 242));
+    p{
+        font-size: 50px;
+        &:hover{
+            cursor: pointer;
+            color: rgb(16, 10, 44);
+            background-color:rgb(0, 255, 242);    
+        }
+        &::before{content: "hagu";}
+    }
+}
+
+.matah{
+    @include hagu(rgb(121, 0, 0), rgb(252, 255, 245));
+    p{
+        font-size: 50px;
+        &:hover{
+            cursor: pointer;
+            color: rgb(121, 0, 0);
+            background-color: #fff;    
+        }
+        &::after{content: quote($string: " matha");
+        text-align: right;
+    font-family: sans-serif;
+text-transform: capitalize;}
+    }
+}

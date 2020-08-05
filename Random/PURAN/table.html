@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tables and Lists</title>
+    <style>
+        table {
+            border-style: none;
+            margin: 100px;
+            padding: 10px;
+            border: 10px solid green;
+        }
+
+        th {
+            border-style: outset;
+            background-color: gainsboro;
+            text-align: center;
+            padding: 5px;
+            width: 300px;
+            border-spacing: 100px;
+            letter-spacing: 10px;
+            word-spacing: 10px;
+        }
+
+        td {
+            border-style: inset;
+            border-spacing: 100px;
+            word-spacing: 100px;
+        }
+
+        #ktta {
+             background-color: red;
+             width: 500px ;
+             height: 100px;
+             border-style:solid dotted dashed double !important;
+             border-color: black silver darkgreen rgb(17, 17, 146) !important;
+             /* border-top: 5px solid green; upore important lihksi tai eita kono kajer nai */
+             border-radius: 10px 150px 300px 500px;
+
+      }
+
+    </style>
+</head>
+<body>
+    <ul type="circle">
+        <li id="ktta">This is first item of my unordered list</li>
+        <li>This is second item of my unordered list</li>
+
+        <ul>
+            <li>Another one</li>
+            <li>Another two</li>
+            <li>Another three</li>
+        </ul>
+
+
+        <li>This is third item of my unordered list</li>
+    </ul>
+    <ol type="a">
+        <li>This is first item of my ordered list</li>
+        <li>This is second item of my ordered list</li>
+        <li>This is third item of my ordered list</li>
+    </ol>
+
+    <!-- Tables -->
+    <h3>HTML Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Employee Id</th>
+                <th>Employee Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Harry </td>
+                <td> 34343 </td>
+                <td> Programmer </td>
+            </tr>
+            <tr>
+                <td> Rohan Das</td>
+                <td> 3483 </td>
+                <td> HTML Expert </td>
+            </tr>
+            <tr>
+                <td> Shubham </td>
+                <td> 7564 </td>
+                <td> Android Developer </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

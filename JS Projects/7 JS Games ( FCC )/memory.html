@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid{
+            display: flex;
+            flex-wrap: wrap;
+            height: 300px;
+            width: 400px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Score: <Span id="result"></Span></h3>
+
+    <div class="grid">
+
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            //Card options
+            const cardArray= [
+                {
+                    name: 'Resturent',
+                    img:'images/res.jpg'
+                },
+                {
+                    name: 'Pasta',  
+                    img:'images/pasta.jpg'
+                },
+                {
+                    name:'Pizza',
+                    img:'images/piz.jpg'
+                },
+                {
+                    name: 'Menu',
+                    img:'images/'
+                },
+                {
+                    name: 'Snacks',
+                    img: 'images/images(2).jpg'
+                },
+                {
+                    name: 'Naheen',
+                    img:'images/nah.jpg'
+                },
+                {
+                    name: 'Facebook',
+                    img:'images/facebook.png'
+                },
+                  ]
+   
+       const grid = document.querySel
+       ector('.grid')
+       let cardsChosen = []
+      
+      //Create Board
+      function createboard() {
+          for (let i = 0; i < cardArray.length; i++) {
+              let card = document.createElement('img')
+              card.setAttribute('src', 'images/1 res.jpg')
+              card.setAttribute('data-id', i)
+
+            // card.addEventListener('click', flipcard)
+              grid.appendChild (card)
+          }
+      }
+    
+//check for matches
+
+//Flip your card
+      function flipCard() {
+          let cardId= this.getAttribute('data-id')
+          cardsChosen.push(cardArray[cardId].name)
+        
+      }
+
+
+        })
+
+     </script>
+</body>
+</html>

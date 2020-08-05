@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down (StopWatch)
+    </title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, rgb(255, 94, 0), rgb(255, 145, 0), rgb(255, 217, 0));
+        }
+
+        .container {
+            width: 800px;
+            margin: 30px auto;
+            color: #fff;
+            text-align: center;
+            color:white;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+            font-size: 2.6em;
+            text-transform: uppercase;
+        }
+
+        button{
+            padding: 20px 70px;
+            margin: 0px 6px;
+            background-color: Transparent;
+            text-size-adjust:inherit;
+            font-weight: 600;
+            font-size: 20px;     background-repeat:no-repeat; /*Very Important */
+     border:  white 1px solid;
+     color: white;
+     border-radius: 5px;
+    cursor:pointer;
+    overflow: hidden; 
+    outline: none; /* Very Important */
+        }
+
+        button:hover {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background: #fff;
+    border: solid 1px #fff;
+    color: #ffa600;
+  }
+
+        p{
+            /* font-size: 30px;
+            font-weight: 600; */
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Stop Watch</h1>
+        <h2>Vanilla JavaScript StopWatch</h2>
+
+        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="restart">Restart</button>
+    </div>
+
+
+    <script>
+        window.onload = function () {
+
+            let seconds = 00;
+            let tens = 00;
+            let appendTens = document.getElementById("tens")
+            let appendSeconds = document.getElementById("seconds")
+            let buttonStart = document.getElementById('start');
+            let buttonStop = document.getElementById('stop');
+            let buttonReset = document.getElementById('restart');
+            let Interval;
+
+            buttonStart.onclick = function () {
+
+                clearInterval(Interval);
+                Interval = setInterval(startTimer, 10);
+            }
+
+            buttonStop.onclick = function () {
+                clearInterval(Interval);
+            }
+
+
+            buttonReset.onclick = function () {
+                clearInterval(Interval);
+                tens = "00";
+                seconds = "00";
+                appendTens.innerHTML = tens;
+                appendSeconds.innerHTML = seconds;
+            }
+
+
+
+
+            function startTimer() {
+                tens++;
+
+                // 1
+                 if (tens < 9) {
+                    appendTens.innerHTML = "0" + tens;
+                }
+
+                //2
+                if (tens > 9) {
+                    appendTens.innerHTML = tens;
+
+                }
+
+                //3
+                if (tens > 99) {
+                    console.log("seconds");
+                    seconds++;
+                    appendSeconds.innerHTML = "0" + seconds;
+                    tens = 0;
+                    appendTens.innerHTML = "0" + 0;
+                }
+
+
+                //4
+                if (seconds > 9) {
+                    appendSeconds.innerHTML = seconds;
+                }
+
+            }
+
+
+        }
+
+//   window.onload = (event) => {
+//   console.log('page is fully loaded');
+// };
+    </script>
+</body>
+
+</html>

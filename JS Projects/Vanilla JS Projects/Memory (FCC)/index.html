@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Game</title>
+  <style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(to right, rgb(253, 154, 24), rgb(255, 152, 56), rgb(255, 114, 49));
+  }
+  .memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+  
+  .memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333%-10px);
+    cursor: pointer;
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(255, 196, 0, 0.3);
+  }
+  .memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+  }
+  
+  .memory-card.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    border-radius: 5px;
+   background-color: rgb(248, 106, 11);
+    backface-visibility: hidden;
+  }
+  
+  .front-face {
+    transform: rotateY(180deg);
+  }
+</style>
+</head>
+
+<body>
+  <selection class="memory-game">
+  
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front-face" src="photo/naheen.jpg" alt="Aurelia" />
+      <img class="back-face" src="photo/js.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front-face" src="photo/naheen.jpg" alt="Aurelia" />
+      <img class="back-face" src="photo/js.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="vue">
+      <img class="front-face" src="photo/rahimin.jpg" alt="Vue" />
+      <img class="back-face" src="photo/js.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="vue">
+      <img class="front-face" src="photo/rahimin.jpg" alt="Vue" />
+      <img class="back-face" src="photo/js.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="angular">
+      <img class="front-face" src="photo/full.jpg" alt="Angular" />
+      <img class="back-face" src="photo/js.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="angular">
+      <img class="front-face" src="photo/full.jpg" alt="Angular" />
+      <img class="back-face" src="photo/js.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="ember">
+      <img class="front-face" src="photo/raian.jpg" alt="Ember" />
+      <img class="back-face" src="photo/js.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="ember">
+      <img class="front-face" src="photo/raian.jpg" alt="Ember" />
+      <img class="back-face" src="photo/js.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="backbone">
+      <img class="front-face" src="photo/jirai.jpg" alt="Backbone" />
+      <img class="back-face" src="photo/js.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="backbone">
+      <img class="front-face" src="photo/jirai.jpg" alt="Backbone" />
+      <img class="back-face" src="photo/js.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="photo/mahi.jpg" alt="React" />
+      <img class="back-face" src="photo/js.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="photo/mahi.jpg" alt="React" />
+      <img class="back-face" src="photo/js.png" alt="JS Badge" />
+    </div>
+  </selection>
+
+
+  <script>
+    const cards = document.querySelectorAll('.memory-card');
+
+let hasFlippedCard = false;
+let lockBoard = false;
+let firstCard, secondCard;
+
+function flipCard() {
+  if (lockBoard) return;
+  if (this === firstCard) return;
+
+  this.classList.add('flip');
+
+  if (!hasFlippedCard) {
+    // first click
+    hasFlippedCard = true;
+    firstCard = this;
+
+    return;
+  }
+
+  // second click
+  secondCard = this;
+
+  checkForMatch();
+}
+
+function checkForMatch() {
+  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+
+  isMatch ? disableCards() : unflipCards();
+}
+
+function disableCards() {
+  firstCard.removeEventListener('click', flipCard);
+  secondCard.removeEventListener('click', flipCard);
+
+  resetBoard();
+}
+
+function unflipCards() {
+  lockBoard = true;
+
+  setTimeout(() => {
+    firstCard.classList.remove('flip');
+    secondCard.classList.remove('flip');
+
+    resetBoard();
+  }, 1500);
+}
+
+function resetBoard() {
+  [hasFlippedCard, lockBoard] = [false, false];
+  [firstCard, secondCard] = [null, null];
+}
+
+(function shuffle() {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * 12);
+    card.style.order = randomPos;
+  });
+})();
+
+cards.forEach(card => card.addEventListener('click', flipCard));
+  </script>
+</body>
+</html>
