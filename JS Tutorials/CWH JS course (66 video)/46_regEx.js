@@ -3,8 +3,8 @@ let reg = /harry/; // This is a regular expression literal in js
 reg = /harry/g; // g means global
 // reg = /harry/i; // i means case insensitive
 
-// console.log(reg);
-// console.log(reg.source);
+console.log(reg);
+console.log(reg.source);
 
 let s = "This is great code with harry and also harry bhai";
 // Functions to match expressions
