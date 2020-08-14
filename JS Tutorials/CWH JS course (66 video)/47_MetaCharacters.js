@@ -1,7 +1,11 @@
 console.log('This is tutorial 47');
 
-let regex = /harrsdfgy/;
-// Lets look into some metacharacter symbols
+let regex = /harrsdfgy/
+
+
+
+// Lets look into some metacharacter symbols--> 6
+
 regex = /^harrdc/; // ^ means expression will match if string starts with
 regex = /harry$/; // $ at the end of the string means "string ends with"
 regex = /h.rry/; //matches any one character

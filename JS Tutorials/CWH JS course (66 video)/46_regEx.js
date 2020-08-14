@@ -6,7 +6,7 @@ reg = /harry/g; // g means global
 console.log(reg);
 console.log(reg.source);
 
-let s = "This is great code with harry and also harry bhai";
+let s = "This is great code with Harry and also harry bhai";
 // Functions to match expressions
 // 1. exec() - This function will return an array for match or null for no match
 let result = reg.exec(s);
@@ -38,5 +38,4 @@ let result4 = s.search(reg) // ---> This is right
 // 5. replace() - Returns new replaced string with all the replacements (if no flag is given, first match will be replaced)
 
 let result5 = s.replace(reg, 'SHUBHAM');
-console.log(result5);
-
+console.log(result);
