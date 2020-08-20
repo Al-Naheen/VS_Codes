@@ -3,6 +3,7 @@
 // html2  = "<h1> this is heading</h1>"+
 //         "<p> this is My para</p>";
 // html2 = html2.concat('this', ' str2');
+// // html2 = html2 + 'this' + ' str2';
 // document.write(html2)
 
 //Now- Template Literal

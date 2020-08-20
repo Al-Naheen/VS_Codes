@@ -8,7 +8,7 @@ html  = "<h1> this is heading</h1>"+
         "<p> this is My para</p>";
 
 html = html.concat('this', ' str2');
-console.log(html);
+document.getElementById('baal').innerHTML=html; //Last line OverWrites it
 // console.log(html.length);
 // console.log(html.toLowerCase());
 // console.log(html.toUpperCase());
@@ -25,8 +25,9 @@ console.log(html);
 // console.log(html.slice(0, 4))
 // console.log(html.split('>'));
 // console.log(html.replace('this', 'it'));
+// console.log(html.replaceAll('this', 'it')); //UnExisting
 
-let fruit1 = 'Orange\'';
+let fruit1 = 'Orange\''; // \n,\' for special Symbol
 let fruit2 = 'Apple';
 let myHtml = `Hello ${name}
             <h1> This is "my" heading </h1>
