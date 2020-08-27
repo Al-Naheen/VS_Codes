@@ -1,6 +1,6 @@
 console.log("This is tutorial 46");
-let reg = /harry/; // This is a regular expression literal in js
-reg = /harry/g; // g means global
+let reg = /harry/; 
+reg = /harry/g; //
 // reg = /harry/i; // i means case insensitive
 
 console.log(reg);
@@ -8,7 +8,7 @@ console.log(reg.source);
 
 let s = "This is great code with Harry and also harry bhai";
 // Functions to match expressions
-// 1. exec() - This function will return an array for match or null for no match
+// 1. exec() -  return an array or null
 let result = reg.exec(s);
 // result = reg.exec(s);
 // console.log(result);

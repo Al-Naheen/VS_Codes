@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 
-class StatePara extends Component {
+class StateParameter
+ extends Component {
     constructor() {
         super()
 
@@ -39,4 +40,4 @@ class StatePara extends Component {
     }
 }
 
-export default StatePara
+export default StateParameter

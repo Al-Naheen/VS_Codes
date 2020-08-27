@@ -2,7 +2,7 @@ import React from 'react'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 const clickme=(a)=>{
-    console.log(a);
+    alert(a);
 }
 
 const ArrowBoot=props=>{

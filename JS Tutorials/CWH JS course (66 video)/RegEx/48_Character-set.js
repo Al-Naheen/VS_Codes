@@ -19,7 +19,7 @@ regex = /har{0,2}y/; // r can occur exactly 0 to 2 (0 or 1 or 2) times
 // Groupings  - We use paranthesis for groupings ()
 regex = /(har){2}([0-9]r){3}/
 
-// const str = "hirry9 bhai";
+const str = "hirry9 bhai";
 str = "harrry bhai"
 str = "harhar1r4r5r bhai";
 

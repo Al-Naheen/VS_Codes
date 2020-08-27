@@ -17,8 +17,8 @@ regex = /4r5r\b/;  // word boundary
 
 // Assertions
 regex = /h(?=y)/;
-regex = /h(?!y)/;
-str = "harh7rd1r4r5ry%%$@bhai hdrryika number 899999harry9999";
+// regex = /h(?!y)/;
+str = "&%$$%%^^%hyrh7rd1r4r5r y%%$@bhai hdrryika number 899999harry9999";
 
 
 
