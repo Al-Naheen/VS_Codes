@@ -10,8 +10,8 @@ class OnChange extends Component {
 
 
     OnChangeHandler = (event) => {
-        let value = event.target.value
-        this.setState({name:value})
+        let val = event.target.value
+        this.setState({name:val})
     }
 
     render() {
