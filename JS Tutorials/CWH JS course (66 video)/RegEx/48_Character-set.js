@@ -15,6 +15,7 @@ regex = /h[a-zA-Z]rr[yu0-9][0-9]/; // we can have as many character sets as we w
 // Quantifiers - We use {}
 regex = /har{2}y/; // r can occur exactly 2 times
 regex = /har{0,2}y/; // r can occur exactly 0 to 2 (0 or 1 or 2) times
+regex = /ha{3,}h/; //to specify the lower number of patterns with no upper limit.
 
 // Groupings  - We use paranthesis for groupings ()
 regex = /(har){2}([0-9]r){3}/

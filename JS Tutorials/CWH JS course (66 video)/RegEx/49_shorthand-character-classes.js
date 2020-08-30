@@ -10,14 +10,14 @@ regex = /number \d+/;   // \d+ means more than one digit
 regex = /\D999/;        // \D means non digit
 regex = /\D+999/;       // \D+ means more than one non digit
 regex = /\ska number/;  // Match whitespace character
-regex = /\s+ka number/; // \s+ means match one or more than one whitespace characters
-regex = /\Ska number/;  // Match non whitespace character
+regex = /\s+ka number/; // \s+ means match one or more than one whitespace characters[ \r\t\f\n\v]
+regex = /\Ska number/;  // Match non whitespace character[^ \r\t\f\n\v]
 regex = /\S+ka number/; // Match one or more than one non whitespace character
 regex = /4r5r\b/;  // word boundary
 
-// Assertions
-regex = /h(?=y)/;
-// regex = /h(?!y)/;
+// Assertions-->(Lookaheads)
+regex = /h(?=y)/; //y thakle (only)h return
+regex = /h(?!y)/;  //y na thakle (only)h return
 str = "&%$$%%^^%hyrh7rd1r4r5r y%%$@bhai hdrryika number 899999harry9999";
 
 
