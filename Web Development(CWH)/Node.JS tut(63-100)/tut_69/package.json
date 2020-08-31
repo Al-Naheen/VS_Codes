@@ -1,0 +1,21 @@
+{
+  "name": "tut_69",
+  "version": "1.0.0",
+  "description": "my 1st npm command in cwh course cause I have used npm stuffs before my react projects & practices",
+  "main": "tut 69.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bla",
+    "bla"
+  ],
+  "author": "Naheen Bhai",
+  "license": "ISC",
+  "dependencies": {
+    "slugify": "^1.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

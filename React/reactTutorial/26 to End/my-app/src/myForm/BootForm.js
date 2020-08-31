@@ -27,18 +27,16 @@ class BootForm extends Component {
         this.setState({ [ names ]: values })
     }
 
-    OnClick = () => {
-        let submit = document.getElementById('submit');
-        submit.addEventListener('click', (e) => {
-            e.preventDefault()
-        })
+    OnClick = (event) => {
+        event.preventDefault()
 
         document.getElementById('name').innerHTML = (this.state.name);
-        alert(this.state.email);
-        alert(this.state.password);
-        alert(this.state.select);
-        alert(this.state.option);
-        alert(this.state.textarea);
+        document.getElementById('email').innerHTML = (this.state.email);
+        //Joto length shei number er STAR show korbe--> H.W
+        document.getElementById('password').innerHTML = (this.state.password.length);
+        document.getElementById('select').innerHTML = (this.state.select);
+        document.getElementById('option').innerHTML = (this.state.option);
+        document.getElementById('textArea').innerHTML = (this.state.textArea);
     }
 
 
@@ -47,6 +45,11 @@ class BootForm extends Component {
         return (
             <div>
                 <h2 id='name'></h2>
+                <h2 id='email'></h2>
+                <h2 id='password'></h2>
+                <h2 id='select'></h2>
+                <h2 id='option'></h2>
+                <h2 id='textArea'></h2>
                 <h2>BootStrap Form</h2>
                 <form className='container'>
                     <div class="form-group">
@@ -85,7 +88,7 @@ class BootForm extends Component {
                         <label for="exampleFormControlTextarea1">Describe your feelings</label>
                         <textarea onChange={this.onChangeHandler} name='textarea' class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                        <button onClick={this.OnClick} id='submit' class="btn btn-primary" type="submit">Submit form</button>
+                        <button onClick={this.OnClick} id='submit' class="btn btn-primary">Submit form</button>
                 </form>
             </div >
         );
