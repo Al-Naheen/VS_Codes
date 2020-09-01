@@ -8,6 +8,7 @@ console.log(66+455);
 // 1.0.1
 // 1.1.0
 // 2.0.0
+// (> ^ ~)1.0.0--> tullu
 
 
 
@@ -21,3 +22,8 @@ console.log(66+455);
 // 7. npm install nodemon --save-dev --> Only for Developer activities (package.json e DevDependencies)
 // 8. npm install nodemon --global --> computer er baki project eo use korar jonno
 // 9. nodemon .\tut_69.js --> Backend Live serverz(auto refresh)
+// 10. npm i -->npm install
+// 11. npm i browserify
+// 12. npm view slugify(anyModule) version
+
+console.log("mai Naheen");

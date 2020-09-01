@@ -13,6 +13,7 @@
   "author": "Naheen Bhai",
   "license": "ISC",
   "dependencies": {
+    "browserify": "^16.5.2",
     "slugify": "^1.4.5"
   },
   "devDependencies": {
