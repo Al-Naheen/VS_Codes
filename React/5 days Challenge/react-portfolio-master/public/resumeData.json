@@ -1,0 +1,126 @@
+{
+  "main": {
+    "name": "Al Naheen",
+    "occupation": "ReactJS Developer && JavaScript Programmer",
+    "description": "A 9th Standered Mad boy with a Dream to make a huge change in the world with my Programming skills",
+    "image": "nah.png",
+    "bio": "My name is Naheen, I'm a Full Stack Web Developer. Currently I'm studying in a high school in Bangladesh & exploring the web galaxy with a great enthusiasm ",
+    "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
+    "email": "alnaheen543@gmail.com",
+    "phone": "+880 153 172 5126",
+    "address": {
+      "street": "Sector-6, Uttara",
+      "city": "Dhaka",
+      "state": "Bangladesh"
+    },
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/alnaheen",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/al_naheen/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/Al-Naheen",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Want to Build & Maintain a huge website...? I have great grip on Front-End(HTML, CSS, SASS, JavaScript, ReactJS, BootStrap...) & Backend(Firebase, NodeJS, MongoDb, Django). Don't believe on me in the begging. Firstly Give me a chance without giving me a penny and then decide whether you want me or not",
+    "education": [
+      {
+        "school": "Rajuk Uttara Model College",
+        "degree": "9th standered Student",
+        "graduated": "Not yet",
+        "description": "I have a great Loved for learning & exploring "
+      }
+    ],
+    "work": [
+      {
+        "company": "HappyCoding",
+        "title": "CEO",
+        "years": "August 2020 - Present",
+        "description": "This isn't a company yet. But I have a dream to build a huge company and named that HappyCoding"
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "level": "100%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "80%"
+      },
+      {
+        "name": "HTML5",
+        "level": "90%"
+      },
+      {
+        "name": "CSS",
+        "level": "95%"
+      },
+      {
+        "name": "Git",
+        "level": "60%"
+      },
+      {
+        "name": "Django",
+        "level": "55%"
+      },
+      {
+        "name": "MongoDB",
+        "level": "45%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Rock Paper Scissor",
+        "category": "A coool Project with JavaScript",
+        "image": "Rock Paper Scissor.png"
+      },
+      {
+        "title": "Facebook Clone along with CleverProgrammer",
+        "category": "Facebook Clone built with ReactJS",
+        "image": "facebook-clone.png",
+        "url": "https://www.youtube.com/watch?v=B-kxUMHBxNo"
+      },
+      {
+        "title": "Food Delivery Website",
+        "category": "Food Delivery Website built with JavaScript",
+        "image": "Main gig.png"
+      },
+      {
+        "title": "Our Online Meal",
+        "category": "Our Online Meal Website built.",
+        "image": "2nd Gig.png"
+      },
+      {
+        "title": "Airbnb Clone",
+        "category": "Facebook Clone built with ReactJS",
+        "image": "airbnb-clone.png",
+        "url": "https://www.youtube.com/watch?v=BtJeH_-XYaA"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+        "user": "Martin Fowler"
+      },
+      {
+        "text": "That Al Naheen must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be a high school kid and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "user": "Dilara Naznin... mom"
+      }
+    ]
+  }
+}
