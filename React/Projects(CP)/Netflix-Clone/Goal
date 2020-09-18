@@ -1,0 +1,13 @@
+Demo app
+TMDB API key
+Create react app
+setup firebase hosting
+get all Movies
+build the Rows
+build the Banner
+build the NavBar
+add Trailer Popups
+
+api key--> 1d6adb613ded6e5a66b8f4ab62231dd3
+postman--> https://api.themoviedb.org/3/movie/550?api_key=1d6adb613ded6e5a66b8f4ab62231dd3
+api readAccess Token--> eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxZDZhZGI2MTNkZWQ2ZTVhNjZiOGY0YWI2MjIzMWRkMyIsInN1YiI6IjVmNjIwMGM1MTU2Y2M3MDAzOGU5OWZiNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.8LtfOvkfNsOpR-yEMl2poYvdEzZmjMM1oqI2oE-xXm8

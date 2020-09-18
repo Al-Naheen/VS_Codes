@@ -12,7 +12,13 @@
 
     background-color: white;
     z-index: 1;
+
+    transition: transform 100ms ease-in; /* Ami disi */
   }
+
+.product:hover {
+    transform: scale(1.07);
+}
   
   .product__rating {
     display: flex;

@@ -1,0 +1,13 @@
+api --> Disease.sh
+
+plan:
+1. create WireFrame--> Draw.io
+2. create React-App
+3. Structure of Covid Tracker
+4. Header
+5. Info Boxes
+6. Table(All Countries)
+7. Chart
+8. Map
+9. Styling--> Material UI
+10. Deploy
