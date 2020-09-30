@@ -83,31 +83,40 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Rock Paper Scissor",
-        "category": "A coool Project with JavaScript",
-        "image": "Rock Paper Scissor.png"
+        "title": "Amazon Clone",
+        "category": "Amazon Clone built with ReactJS with User Authentication &  Payment Services",
+        "image": "Amazon.png",
+        "url": "https://youthful-banach-cce9fd.netlify.app"
       },
       {
-        "title": "Facebook Clone along with CleverProgrammer",
-        "category": "Facebook Clone built with ReactJS",
-        "image": "facebook-clone.png",
-        "url": "https://www.youtube.com/watch?v=B-kxUMHBxNo"
+        "title": "Airbnb Clone",
+        "category": "Airbnb Clone built with ReactJS",
+        "image": "airbnb-clone.png",
+        "url": "https://compassionate-jepsen-60dff5.netlify.app"
+      },
+      {
+        "title": "Spotify Clone",
+        "category": "Spotify Clone built with ReactJS User Authentication",
+        "image": "spotify.png",
+        "url": "https://www.linkpicture.com/q/spotify.png"
+      },
+      {
+        "title": "Rock Paper Scissor",
+        "category": "A coool Project with JavaScript",
+        "image": "Rock Paper Scissor.png",
+        "url": "https://linkpicture.com/q/Rock-Paper-Scissor.png"
       },
       {
         "title": "Food Delivery Website",
         "category": "Food Delivery Website built with JavaScript",
-        "image": "Main gig.png"
+        "image": "Main gig.png",
+        "url": "https://linkpicture.com/q/Main-gig.png"
       },
       {
         "title": "Our Online Meal",
         "category": "Our Online Meal Website built.",
-        "image": "2nd Gig.png"
-      },
-      {
-        "title": "Airbnb Clone",
-        "category": "Facebook Clone built with ReactJS",
-        "image": "airbnb-clone.png",
-        "url": "https://www.youtube.com/watch?v=BtJeH_-XYaA"
+        "image": "2nd Gig.png",
+        "url": "https://linkpicture.com/q/2nd-Gig.png"
       }
     ]
   },
