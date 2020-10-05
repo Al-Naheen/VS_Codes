@@ -13,18 +13,19 @@ z = Math.PI;
 z = Math.E;
 z = Math.round(5.4);
 z = Math.ceil(5.3);
+z = Math.floor(5.3);
 z = Math.floor(-5.3);
-z = Math.abs(5);
+z = Math.abs(-5);  //absolute--> Neg ke Positive e Convert kore
 z = Math.sqrt(64);
-z = Math.pow(2, 3);
+z = Math.pow(2, 3);  //Power
 z = Math.min(2, 3, 34,234, 2342,34);
 z = Math.max(2, 3, 34,234,34);
 z = Math.random();
-z = 100*Math.random()
-z = Math.ceil(50 + (100-50)*Math.random())
+z = 100*Math.random()  // 1 to 100
+z = Math.ceil(50 + (100-50)*Math.random())  // 50 to 100
 // a = (0, 1)
-// a100 = a*100 = (0, 100)
-// a10_100 = 10+a*(100 - 10)
+// a100 = a*100 = (0, 100)  // 1 to 100
+// a10_100 = 10+a*(100 - 10)  // 10 to 100
 
 console.log(z);
 
@@ -37,4 +38,3 @@ console.log(z);
 // -2
 // -2.7
 // -3
- 
