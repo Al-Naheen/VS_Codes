@@ -1,0 +1,9 @@
+.myStyle{
+    margin: auto;
+    color: rgb(240, 225, 18);
+    background: rgb(0, 0, 55);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: large;
+}

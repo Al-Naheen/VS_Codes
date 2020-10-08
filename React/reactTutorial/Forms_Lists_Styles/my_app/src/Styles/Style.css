@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#header__image{
+  font-size: 50px;
+  color: rgb(151, 2, 2);
+  font-family: 'Chilanka';
+  background: url(https://thumbs.dreamstime.com/b/vector-color-sketch-illustration-pile-shit-flies-white-background-79357989.jpg) no-repeat;
+  height: 100vh;
+  text-align: right;
+  padding-top: 20%;
+  padding-right: 5%;
+  padding-left: 40%;
+}

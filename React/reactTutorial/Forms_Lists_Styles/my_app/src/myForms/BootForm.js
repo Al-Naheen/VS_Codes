@@ -19,12 +19,12 @@ class BootForm extends Component {
     onSubmitHandler = (e) => {
         e.preventDefault()
         alert(`First Name : ${this.state.fname}
-        Last Name : ${this.state.lname}
-        Email Address : ${this.state.email}
-        Select your city : ${this.state.select}
-        Multiple Select : ${this.state.multiSelect}
-        Your Description : ${this.state.textArea}
-        Phone Number : ${this.state.phone}`)
+Last Name : ${this.state.lname}
+Email Address : ${this.state.email}
+Select your city : ${this.state.select}
+Multiple Select : ${this.state.multiSelect}
+Your Description : ${this.state.textArea}
+Phone Number : ${this.state.phone}`)
     }
 
     onChangeHandler = (e) => {
