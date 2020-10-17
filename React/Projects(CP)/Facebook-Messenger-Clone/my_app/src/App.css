@@ -1,0 +1,64 @@
+.app {
+  text-align: center;
+}
+
+.app__header {
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.app__form {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  background-color: #e9e9eb;
+  padding: 20px;
+  width: 90%;
+  margin: 20px;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2);
+}
+
+.app__formControl {
+  display: flex !important;
+  align-items: center;
+  flex-direction: row !important;
+  justify-content: space-between;
+}
+
+.app__input {
+  flex: 1;
+}
+
+.app__button {
+  flex: 0;
+}
+
+.app__headerSpan{
+  padding-left: .5%;
+}
+
+.app__headerBold{
+  padding: 0 1%;
+}
+h1 {
+  padding-left: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 23px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  justify-content: center;
+}
+
+.app__messageContainer {
+  margin-bottom: 100px !important;
+}
