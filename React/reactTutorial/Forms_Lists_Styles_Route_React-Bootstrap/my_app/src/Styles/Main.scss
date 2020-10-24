@@ -1,0 +1,16 @@
+// React e SASS ke CSS e convert korte hoy na...direct scss file e execute hoy 
+
+$textColor : white;
+$backColor: rgb(221, 80, 37);
+$size : 25px;
+
+.sass__marai{
+    color: $textColor;
+    background-color: $backColor;
+    padding: $size;
+    font-size: $size;
+    margin: $size;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}

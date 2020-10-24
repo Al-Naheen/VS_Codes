@@ -2,7 +2,7 @@
   "main": {
     "name": "Al Naheen",
     "occupation": "ReactJS Developer && JavaScript Programmer",
-    "description": "A 9th Standered Mad boy with a Dream to make a huge change in the world with my Programming skills",
+    "description": "A high school Mad boy with a Dream to make a huge change in the world with my Programming skills",
     "image": "nah.png",
     "bio": "My name is Naheen, I'm a Full Stack Web Developer. Currently I'm studying in a high school in Bangladesh & exploring the web galaxy with a great enthusiasm ",
     "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
@@ -32,21 +32,21 @@
     ]
   },
   "resume": {
-    "skillmessage": "Want to Build & Maintain a huge website...? I have great grip on Front-End(HTML, CSS, SASS, JavaScript, ReactJS, BootStrap...) & Backend(Firebase, NodeJS, MongoDb, Django). Don't believe on me in the begging. Firstly Give me a chance without giving me a penny and then decide whether you want me or not",
+    "skillmessage": "Want to Build & Maintain a huge website...? I have great grip on Front-End (HTML, CSS, SASS, JavaScript, ReactJS, BootStrap...) & Backend (Firebase, NodeJS, MongoDb, Django). Don't believe on me in the begging. Firstly Give me a chance without giving me a penny and then decide whether you want me or not",
     "education": [
       {
         "school": "Rajuk Uttara Model College",
-        "degree": "9th standered Student",
+        "degree": "High School Student",
         "graduated": "Not yet",
         "description": "I have a great Loved for learning & exploring "
       }
     ],
     "work": [
       {
-        "company": "HappyCoding",
+        "company": "Happy Programming",
         "title": "CEO",
         "years": "August 2020 - Present",
-        "description": "This isn't a company yet. But I have a dream to build a huge company and named that HappyCoding"
+        "description": "This isn't a company yet. But I have a dream to build a huge company and named that Happy Programming"
       }
     ],
     "skills": [
@@ -67,8 +67,24 @@
         "level": "95%"
       },
       {
+        "name": "SASS",
+        "level": "85%"
+      },
+      {
+        "name": "Python",
+        "level": "75%"
+      },
+      {
         "name": "Git",
         "level": "60%"
+      },
+      {
+        "name": "Node.js",
+        "level": "70%"
+      },
+      {
+        "name": "Express.js",
+        "level": "70%"
       },
       {
         "name": "Django",
@@ -98,25 +114,25 @@
         "title": "Spotify Clone",
         "category": "Spotify Clone built with ReactJS User Authentication",
         "image": "spotify.png",
-        "url": "https://www.linkpicture.com/q/spotify.png"
+        "url": ""
       },
       {
         "title": "Rock Paper Scissor",
         "category": "A coool Project with JavaScript",
         "image": "Rock Paper Scissor.png",
-        "url": "https://linkpicture.com/q/Rock-Paper-Scissor.png"
+        "url": ""
       },
       {
         "title": "Food Delivery Website",
         "category": "Food Delivery Website built with JavaScript",
         "image": "Main gig.png",
-        "url": "https://linkpicture.com/q/Main-gig.png"
+        "url": ""
       },
       {
         "title": "Our Online Meal",
         "category": "Our Online Meal Website built.",
         "image": "2nd Gig.png",
-        "url": "https://linkpicture.com/q/2nd-Gig.png"
+        "url": ""
       }
     ]
   },
