@@ -1,15 +1,23 @@
-** Front-End:
-1. React
-2. Material-Ui
-3. Firebase Hosting
-4. Flexbox
-5. 3rd Party Ticker
-6. Scroll Snap
+Actual App(Now):
+    1. React
+    2. Material-Ui
+    3. Firebase(Hosting, , Database)
+    4. CSS hacks(Flexbox, Scroll Snap functionaity)
+    5. UseRef hooks
+    6. Play with Video
 
 
-** Back-End:
-1. Node.js
-2. Express.js Server
-3. MongoDb
-4. Mongoose
-5. Hosting on Heroku
+MERN: 
+  ** Front-End:
+    1. React
+    2. Material-Ui
+    3. Firebase Hosting
+    4. Flexbox
+    5. 3rd Party Ticker
+    6. Scroll Snap
+  ** Back-End:
+    1. Node.js
+    2. Express.js Server
+    3. MongoDb
+    4. Mongoose
+    5. Hosting on Heroku

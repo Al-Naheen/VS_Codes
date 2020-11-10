@@ -1,18 +1,35 @@
-import React from 'react'
-import './Video.css'
+import React, { useRef, useState } from "react";
+import VideoFooter from "./VideoFooter";
+import VideoSidebar from "./VideoSidebar";
+import "./Video.css";
 
-function Video() {
-    return (
-        <div className='video'>
-            <h1>I am a Video</h1>
+function Video({ url, channel, description, song, likes, messages, shares }) {
+  const [playing, setPlaying] = useState(false);
+  const videoRef = useRef(null);
 
-            <video src="https://www.tiktok.com/@zuariaaa/video/6856850841136041221"></video>
-            {/* Video link kaj kore na--> arekta hobe */}
+  const onVideoPress = () => {
+    if (playing) {
+      videoRef.current.pause();
+      setPlaying(false);
+    } else {
+      videoRef.current.play();
+      setPlaying(true);
+    }
+  };
 
-            {/* VideoFooter */}
-            {/* VideoSidebar */}
-        </div>
-    )
+  return (
+    <div className="video">
+      <video
+        className="video__player"
+        loop
+        onClick={onVideoPress}
+        ref={videoRef}
+        src={url}
+      ></video>
+      <VideoFooter channel={channel} description={description} song={song} />
+      <VideoSidebar likes={likes} messages={messages} shares={shares} />
+    </div>
+  );
 }
 
-export default Video
+export default Video;

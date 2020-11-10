@@ -1,13 +1,15 @@
 api --> Disease.sh
+if 'npx' doesn't work --> npm install -g npx --> then 'npx' create-react-app folder-name
 
 plan:
 1. create WireFrame--> Draw.io
-2. create React-App
-3. Structure of Covid Tracker
-4. Header
-5. Info Boxes
-6. Table(All Countries)
-7. Chart
-8. Map
-9. Styling--> Material UI
-10. Deploy
+2. create-react-App
+3. Clean-up Process
+4. Structure of Covid Tracker
+5. Header
+6. Info Boxes
+7. Table(All Countries)
+8. Chart
+9. Map
+10. Styling--> Material UI
+11. Deploy

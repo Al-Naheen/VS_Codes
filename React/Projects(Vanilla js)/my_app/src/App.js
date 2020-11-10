@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from "react-dom";
 import './App.css';
 import { FaHandPaper, FaHandRock, FaHandScissors } from "react-icons/fa";
 
@@ -14,14 +15,14 @@ function App() {
   let scissor_div = document.getElementById("s")
 
   //Computer Choice 
-  const getCompChoice=()=>{
+  const getCompChoice = () => {
     const choices = [ 'r', 'p', 's' ];
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[ randomNumber ];
   }
 
   //ShortForm theke Full form e CONVERT
-  const convertToWord=(letter)=> {
+  const convertToWord = (letter) => {
     if (letter === "r") return "Rock";
     if (letter === "p") return "Paper";
     return "Scissor";
@@ -32,9 +33,10 @@ function App() {
     const smallCompWord = "comp".fontsize(3).sub();
     const userChoice_div = document.getElementById(userChoice);
     userScore++;
-    userScore_span.innerHTML = userScore;
-    compScore_span.innerHTML = compScore;
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(compChoice)}${smallCompWord}. Brooh` //eita ES-6 format e...
+    ReactDOM.findDOMNode(userScore_span).innerHTML = userScore;
+    ReactDOM.findDOMNode(compScore_span).innerHTML = compScore;
+    ReactDOM.findDOMNode(result_p).innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(compChoice)}${smallCompWord}. Brooh`;
+    //eita ES-6 format e...
     //+"" die jeita likhe oita ES-5 format....
 
     // document.getElementById(userChoice).classList.add('green-glow');   //but HTML e userChoice Bolte kono ID nai...
@@ -43,7 +45,7 @@ function App() {
       userChoice_div.classList.remove('green-glow')
       , 300);
   }
-  
+
   function lose(userChoice, compChoice) {
     const smallUserWord = "user".fontsize(3).sub();
     const smallCompWord = "comp".fontsize(3).sub();
@@ -91,15 +93,15 @@ function App() {
   }
 
   //Define Choices(Rock, Paper, Scissor)
-    const rock_div_onClick = () =>
-      game("r");
-    const paper_div_onClick = () =>
-      game("p");
-    const scissor_div_onClick = () =>
-      game("s");
+  const rock_div_onClick = () =>
+    game("r");
+  const paper_div_onClick = () =>
+    game("p");
+  const scissor_div_onClick = () =>
+    game("s");
 
 
-      
+
   return (
     <div className="App">
       <header>

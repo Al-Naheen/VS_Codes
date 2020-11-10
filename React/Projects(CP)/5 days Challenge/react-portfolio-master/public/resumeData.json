@@ -37,7 +37,7 @@
       {
         "school": "Rajuk Uttara Model College",
         "degree": "High School Student",
-        "graduated": "Not yet",
+        "graduated": "Not yet graduated",
         "description": "I have a great Loved for learning & exploring "
       }
     ],
@@ -92,7 +92,19 @@
       },
       {
         "name": "MongoDB",
-        "level": "45%"
+        "level": "50%"
+      },
+      {
+        "name": "TypeScript",
+        "level": "80%"
+      },
+      {
+        "name": "Data Structure",
+        "level": "75%"
+      },
+      {
+        "name": "Algorithm",
+        "level": "70%"
       }
     ]
   },
@@ -111,6 +123,12 @@
         "url": "https://compassionate-jepsen-60dff5.netlify.app"
       },
       {
+        "title": "Messenger Clone",
+        "category": "Facebook-Messenger Clone built with ReactJS",
+        "image": "messenger.png",
+        "url": "https://facebook-messenger-clone-c1d9d.web.app/"
+      },
+      {
         "title": "Spotify Clone",
         "category": "Spotify Clone built with ReactJS User Authentication",
         "image": "spotify.png",
@@ -120,19 +138,13 @@
         "title": "Rock Paper Scissor",
         "category": "A coool Project with JavaScript",
         "image": "Rock Paper Scissor.png",
-        "url": ""
+        "url": "http://rock.c1.biz/"
       },
       {
         "title": "Food Delivery Website",
         "category": "Food Delivery Website built with JavaScript",
         "image": "Main gig.png",
-        "url": ""
-      },
-      {
-        "title": "Our Online Meal",
-        "category": "Our Online Meal Website built.",
-        "image": "2nd Gig.png",
-        "url": ""
+        "url": "http://foodtailblocks.c1.biz/"
       }
     ]
   },
