@@ -1,12 +1,14 @@
-Demo app
-TMDB API key
-Create react app
-setup firebase hosting
-get all Movies
-build the Rows
-build the Banner
-build the NavBar
-add Trailer Popups
+In the FUll Tutorial...
+    1. Demo app
+    2. TMDB API key
+    3. Create react app
+    4. setup firebase hosting
+    5. get all Movies
+    6. build the Rows
+    7. build the Banner
+    8. build the NavBar
+    9. add Trailer Popups
+    10. Deploy App to Firebase
 
 api key--> 1d6adb613ded6e5a66b8f4ab62231dd3
 postman--> https://api.themoviedb.org/3/movie/550?api_key=1d6adb613ded6e5a66b8f4ab62231dd3

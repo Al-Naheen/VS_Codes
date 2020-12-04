@@ -1,22 +1,15 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react'
+import { Button, Input, makeStyles, Modal } from '@material-ui/core'
+import React, { useEffect, useState } from 'react'
+import './App.css'
+import { auth, db } from './firebase'
+import ImageUpload from './ImageUpload'
+import Post from './Post'
+import InstagramEmbed from 'react-instagram-embed';
 
-import './App.css';
-import Post from './components/Post';
-import ImageUpload from './components/ImageUpload';
-
-import { db, auth } from './firebase'
-
-import { makeStyles } from '@material-ui/core/styles'
-import Modal from '@material-ui/core/Modal'
-import { Button, Input } from '@material-ui/core'
-
-import InstagramEmbed from 'react-instagram-embed'
-
-
+// Modal Styles
 function getModalStyle() {
-  const top = 50
-  const left = 50
+  const top = 50;
+  const left = 50;
 
   return {
     top: `${top}%`,
@@ -24,61 +17,48 @@ function getModalStyle() {
     transform: `translate(-${top}%, -${left}%)`,
   };
 }
-
 const useStyles = makeStyles((theme) => ({
   paper: {
     position: 'absolute',
     width: 400,
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #000',
-    boxShadow: theme.shadows[5],
+    boxShadow: theme.shadows[ 5 ],
     padding: theme.spacing(2, 4, 3),
   },
 }));
 
+
 function App() {
   const classes = useStyles()
-  const [modalStyle] = useState(getModalStyle);
-  const [open, setOpen] = useState(false);
-  const [openSignIn, setOpenSignIn] = useState(false)
+  const [ modalStyle ] = useState(getModalStyle)
+  const [ posts, setPosts ] = useState([])
+  const [ open, setOpen ] = useState(false)
+  const [ username, setUsername ] = useState('');
+  const [ password, setPassword ] = useState('');
+  const [ email, setEmail ] = useState('');
+  const [ user, setUser ] = useState(null);
+  const [ openSignIn, setOpenSignIn ] = useState(false);
 
-  const [posts, setPosts] = useState([])
-  const [username, setUsername] = useState('')
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [user, setUser] = useState(null)
-
+  // The below is what checks if you are logged in or not, and keeps you logged in on refresh
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
-        // user has logged in
-        console.log(authUser)
-        setUser(authUser)
-
-        // if (authUser.displayName) {
-        //   //dont update username
-        // } else {
-        //   //if we just created someone
-        //   return authUser.updateProfile({
-        //     displayName: username
-        //   })
-        // }
-
+        // if user has logged in...
+        setUser(authUser);
       } else {
-        //user has logged out
-        setUser(null)
+        // if user has logged out... 
+        setUser(null);
       }
     })
-
     return () => {
       // perform some cleanup actions
-      unsubscribe()
+      unsubscribe();
     }
-  }, [user, username])
+  }, [ user, username ]);
 
   useEffect(() => {
     db.collection('posts').orderBy('timestamp', 'desc').onSnapshot(snapshot => {
-      // every time a new post is added fire this code off
       setPosts(snapshot.docs.map(doc => ({
         id: doc.id,
         post: doc.data()
@@ -87,8 +67,8 @@ function App() {
   }, [])
 
   const signUp = (event) => {
-    event.preventDefault()
-
+    // This is to prevent the page from refreshing when we submit the form
+    event.preventDefault();
     auth
       .createUserWithEmailAndPassword(email, password)
       .then((authUser) => {
@@ -96,41 +76,57 @@ function App() {
           displayName: username
         })
       })
-      .catch((err) => alert(err.message))
+      .catch((error) => alert(error.message));
+    // Set user so that footer changes accordingly
 
-    setOpen(false)
+    // Close modal
+    setOpen(false);
   }
-
   const signIn = (event) => {
-    event.preventDefault()
-
+    event.preventDefault();
     auth
       .signInWithEmailAndPassword(email, password)
-      .catch((err) => alert(err.message))
+      .catch((error) => alert(error.message));
 
-    setOpenSignIn(false)
+    // Close modal
+    setOpenSignIn(false);
   }
 
-
-
+  // console.log(posts);
   return (
-    <div className="App">
-
+    <div className='app'>
       <Modal
         open={open}
         onClose={() => setOpen(false)}
       >
         <div style={modalStyle} className={classes.paper}>
-          <form className="app__signUp">
+          <form className='app__signup'>
             <center>
-              <img className="app__headerImage" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="instagram logo" />
+              <img
+                className="app__headerImage"
+                src="https://firebasestorage.googleapis.com/v0/b/instagram-clone-325b6.appspot.com/o/images%2FnaheenInsta.png?alt=media&token=15467584-78ce-44d6-8f78-2fecbf4149d1"
+                alt=""
+              />
             </center>
-
-            <Input placeholder='username' type='text' value={username} onChange={(e) => setUsername(e.target.value)} />
-            <Input placeholder='email' type='text' value={email} onChange={(e) => setEmail(e.target.value)} />
-            <Input placeholder='password' type='password' value={password} onChange={(e) => setPassword(e.target.value)} />
-
-            <Button type='submit' onClick={signUp}>Sign Up</Button>
+            <Input
+              type="text"
+              placeholder='Username'
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <Input
+              placeholder="Email"
+              type="text"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <Input
+              placeholder="Password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <Button onClick={signUp} type='submit' variant="contained" color="secondary">Sign Up</Button>
           </form>
         </div>
       </Modal>
@@ -140,51 +136,69 @@ function App() {
         onClose={() => setOpenSignIn(false)}
       >
         <div style={modalStyle} className={classes.paper}>
-          <form className="app__signUp">
+          <form className="app__signup">
             <center>
-              <img className="app__headerImage" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="instagram logo" />
+              <img
+                className="app__headerImage"
+                src="https://firebasestorage.googleapis.com/v0/b/instagram-clone-325b6.appspot.com/o/images%2FnaheenInsta.png?alt=media&token=15467584-78ce-44d6-8f78-2fecbf4149d1"
+                alt=""
+              />
             </center>
-
-            <Input placeholder='email' type='text' value={email} onChange={(e) => setEmail(e.target.value)} />
-            <Input placeholder='password' type='password' value={password} onChange={(e) => setPassword(e.target.value)} />
-
-            <Button type='submit' onClick={signIn}>Login</Button>
+            <Input
+              placeholder="Email"
+              type="text"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <Input
+              placeholder="password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <Button variant="contained" color="secondary" type="submit" onClick={signIn}>Sign In</Button>
           </form>
         </div>
       </Modal>
-
       <div className="app__header">
         <img
           className="app__headerImage"
-          src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-          alt="instagram logo"
+          src="https://firebasestorage.googleapis.com/v0/b/instagram-clone-325b6.appspot.com/o/images%2FnaheenInsta.png?alt=media&token=15467584-78ce-44d6-8f78-2fecbf4149d1"
+          alt=""
         />
-
         {user ? (
-          <Button onClick={() => auth.signOut()}>Logout</Button>
+          <Button variant="contained" color="secondary" onClick={() => auth.signOut()}>Log Out</Button>
         ) : (
             <div className="app__loginContainer">
-              <Button onClick={() => setOpen(true)}>Sign Up</Button>
-              <Button onClick={() => setOpenSignIn(true)}>Login</Button>
+              <Button className='app__signinButton' variant="contained" color="secondary" onClick={() => setOpenSignIn(true)}>Sign In</Button>
+              <Button variant="contained" color="secondary" onClick={() => setOpen(true)}>Sign Up</Button>
             </div>
-          )}
+          )
+        }
       </div>
 
       <div className="app__posts">
         <div className="app__postsLeft">
           {
             posts.map(({ id, post }) => (
-              <Post postId={id} user={user} username={post.username} caption={post.caption} imageUrl={post.imageUrl} />
+              <Post
+                user={user}
+                postId={id}
+                key={id}
+                username={post.username}
+                caption={post.caption}
+                imageUrl={post.imageUrl}
+              ></Post>
             ))
           }
         </div>
         <div className="app__postsRight">
           <InstagramEmbed
-            url='https://www.instagram.com/p/B2Z2cX8lUSE/?utm_source=ig_web_copy_link'
+            url="https://www.instagram.com/p/CGunVQgDC6a/"
             maxWidth={320}
             hideCaption={false}
-            containerTagName='div'
-            protocol=''
+            containerTagName="div"
+            protocol=""
             injectScript
             onLoading={() => { }}
             onSuccess={() => { }}
@@ -194,14 +208,13 @@ function App() {
         </div>
       </div>
 
-
       {user?.displayName ? (
-        <ImageUpload username={user.displayName} />
+        <ImageUpload username={user.displayName}></ImageUpload>
       ) : (
-          <h3>Login to upload</h3>
+          <h3 style={{textAlign:"center", paddingBottom:'50px', fontWeight:'normal' }}>Sorry you need to login to upload <b><i> Posts & Comments</i></b></h3>
         )}
-    </div >
-  );
+    </div>
+  )
 }
 
-export default App;
+export default App
