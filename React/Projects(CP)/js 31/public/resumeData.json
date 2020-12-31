@@ -1,0 +1,192 @@
+{
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Drum Kit",
+        "category": "1st Project built with Plain JavaScript",
+        "image": "js30/1.png",
+        "url": "https://1-drumkit-5841.netlify.app/"
+      },
+      {
+        "title": "Analog Clock",
+        "category": "2nd Project built with Plain JavaScript",
+        "image": "js30/2.png",
+        "url": "https://2-js-css-clock.netlify.app/"
+      },
+      {
+        "title": "CSS Variables",
+        "category": "3rd Project built with Plain JavaScript",
+        "image": "js30/3.png",
+        "url": "https://3-css-variabes.netlify.app/"
+      },
+      {
+        "title": "Array Cardio Day-1",
+        "category": "4th Project built with Plain JavaScript",
+        "image": "js30/4.png",
+        "url": "https://4-array-cardio-day-1.netlify.app/"
+      },
+      {
+        "title": "Flex Panel Gallery",
+        "category": "5th Project built with Plain JavaScript",
+        "image": "js30/5.png",
+        "url": "https://5-flex-panel-gallery.netlify.app/"
+      },
+      {
+        "title": "Type Ahead",
+        "category": "6th Project built with Plain JavaScript",
+        "image": "js30/6.png",
+        "url": "https://6-type-ahead.netlify.app/"
+      },
+      {
+        "title": "Array Cardio Day-2",
+        "category": "7th Project built with Plain JavaScript",
+        "image": "js30/7.png",
+        "url": "https://7-array-cardio-day-2.netlify.app/"
+      },
+      {
+        "title": "html5 Canvas",
+        "category": "8th Project built with Plain JavaScript",
+        "image": "js30/8.png",
+        "url": "https://8-fun-with-html5-canvas.netlify.app/"
+      },
+      {
+        "title": "Dev Tools Domination",
+        "category": "9th Project built with Plain JavaScript",
+        "image": "js30/9.png",
+        "url": "https://9-dev-tools-domination.netlify.app/"
+      },
+      {
+        "title": "Dev Tools Domination",
+        "category": "10th Project built with Plain JavaScript",
+        "image": "js30/10.png",
+        "url": "https://10-hold-shift-and-check-checkboxes.netlify.app/"
+      },
+      {
+        "title": "Custom Video Player",
+        "category": "11th Project built with Plain JavaScript",
+        "image": "js30/11.png",
+        "url": "https://11-custom-video-player.netlify.app/"
+      },
+      {
+        "title": "Key Sequence Detection",
+        "category": "12th Project built with Plain JavaScript",
+        "image": "js30/12.png",
+        "url": "https://12-key-sequence-detection.netlify.app/"
+      },
+      {
+        "title": "Slide in on Scroll",
+        "category": "13th Project built with Plain JavaScript",
+        "image": "js30/13.png",
+        "url": "https://13-slide-in-on-scroll.netlify.app/"
+      },
+      {
+        "title": "JS References vs Copying",
+        "category": "14th Project built with Plain JavaScript",
+        "image": "js30/14.png",
+        "url": "https://14-js-references-vs-copying.netlify.app/"
+      },
+      {
+        "title": "Local Storage",
+        "category": "15th Project built with Plain JavaScript",
+        "image": "js30/15.png",
+        "url": "https://15-localstorage.netlify.app/"
+      },
+      {
+        "title": "Mouse Move Shadow",
+        "category": "16th Project built with Plain JavaScript",
+        "image": "js30/16.png",
+        "url": "https://16-mouse-move-shadow.netlify.app/"
+      },
+      {
+        "title": "Sort Without Articles",
+        "category": "17th Project built with Plain JavaScript",
+        "image": "js30/17.png",
+        "url": "https://17-sort-without-articles.netlify.app/"
+      },
+      {
+        "title": "Adding Up Times with Reduce",
+        "category": "18th Project built with Plain JavaScript",
+        "image": "js30/18.png",
+        "url": "https://18-adding-up-times-with-reduce.netlify.app/"
+      },
+      {
+        "title": "Webcam Fun",
+        "category": "19th Project built with Plain JavaScript",
+        "image": "js30/19.png",
+        "url": "https://19-webcam-fun.netlify.app/"
+      },
+      {
+        "title": "Speech Detection",
+        "category": "20th Project built with Plain JavaScript",
+        "image": "js30/20.png",
+        "url": "https://20-speech-detection.netlify.app/"
+      },
+      {
+        "title": "Geo Location",
+        "category": "21st Project built with Plain JavaScript",
+        "image": "js30/21.png",
+        "url": "https://21-geolocation.netlify.app/"
+      },
+      {
+        "title": "Follow Along Link Highlighter",
+        "category": "22nd Project built with Plain JavaScript",
+        "image": "js30/22.png",
+        "url": "https://22-follow-along-link-highlighter.netlify.app/"
+      },
+      {
+        "title": "Speech Synthesis",
+        "category": "23rd Project built with Plain JavaScript",
+        "image": "js30/23.png",
+        "url": "https://23-speech-synthesis.netlify.app/"
+      },
+      {
+        "title": "Sticky Nav",
+        "category": "24th Project built with Plain JavaScript",
+        "image": "js30/24.png",
+        "url": "https://24-sticky-nav.netlify.app/"
+      },
+      {
+        "title": "Event Capture Propagation, Bubbling & Once",
+        "category": "25th Project built with Plain JavaScript",
+        "image": "js30/25.png",
+        "url": "https://25-event-capture-propagation-bubbling-once.netlify.app/"
+      },
+      {
+        "title": "Stripe Follow Along Nav",
+        "category": "26th Project built with Plain JavaScript",
+        "image": "js30/26.png",
+        "url": "https://26-stripe-follow-along-nav.netlify.app/"
+      },
+      {
+        "title": "",
+        "category": "27th Project built with Plain JavaScript",
+        "image": "js30/27.png",
+        "url": "https://27-click-and-drag.netlify.app/"
+      },
+      {
+        "title": "Video Speed Controller",
+        "category": "28th Project built with Plain JavaScript",
+        "image": "js30/28.png",
+        "url": "https://28-video-speed-controller.netlify.app/"
+      },
+      {
+        "title": "Countdown Timer",
+        "category": "29th Project built with Plain JavaScript",
+        "image": "js30/29.png",
+        "url": "https://29-countdown-timer.netlify.app/"
+      },
+      {
+        "title": "Whack a Mole",
+        "category": "30th Project built with Plain JavaScript",
+        "image": "js30/30.png",
+        "url": "https://30-whack-a-mole.netlify.app/"
+      },
+      {
+        "title": "Rock Paper Scissor",
+        "category": "31st Project built with Plain JavaScript",
+        "image": "Rock Paper Scissor.png",
+        "url": "http://rock.c1.biz/"
+      }
+    ]
+  }
+}
