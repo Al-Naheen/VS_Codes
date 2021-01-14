@@ -1,0 +1,9 @@
+Context API (redux)
+Material UI
+React Router -- Search page to results instantly without Refresh
+Google Custom Search API
+make our own Custom Hook with react
+Firebase to setup the app to connect to google
+Use Firebase Hosting to deploy the app
+FlexBox
+BEM naming convention
