@@ -83,16 +83,16 @@ function SearchPage() {
           </p>
 
           {data?.items.map((item) => (
-            <div className="searchPage__results">
+            <div key={item.cacheId} className="searchPage__results">
               <a className="searchPage__resultLink " href="item.link">
-                  {item.pagemap?.cse_image?.length>0 && item.pagemap?.cse_image[0].src && (
-                      <img className="searchPage__resultImage" src={
-                          item.pagemap?.cse_image?.length>0 && item.pagemap?.cse_image[0]?.src
-                      }
-                      alt=""
-                      />
-                  )}
-                  {item.displayLink}</a>
+                {item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0].src && (
+                  <img className="searchPage__resultImage" src={
+                    item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src
+                  }
+                    alt=""
+                  />
+                )}
+                {item.displayLink}</a>
               <a className="searchPage__resultTitle" href={item.link}>
                 <h2>{item.title}</h2>
               </a>
