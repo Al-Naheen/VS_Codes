@@ -44,8 +44,8 @@
     "work": [
       {
         "company": "Amader Delivery",
-        "title": "Intern",
-        "years": "November, 2020 - January, 2021",
+        "title": "Front-End Developer",
+        "years": "November, 2020 - Present",
         "description": "I am a ReactJS Developer at Amader Delivery. This is an ecommerce company from where you can buy products online"
       }
     ]
@@ -56,7 +56,7 @@
         "title": "Amazon Clone",
         "category": "Amazon Clone built with ReactJS with User Authentication &  Payment Services",
         "image": "Amazon.png",
-        "url": "https://youthful-banach-cce9fd.netlify.app"
+        "url": "https://clone-be743.web.app/"
       },
       {
         "title": "Instagram Clone",
@@ -69,6 +69,12 @@
         "category": "Netflix Clone built with ReactJS",
         "image": "netflix.png",
         "url": "https://netflix-clone-71286.web.app/"
+      },
+      {
+        "title": "Google Clone",
+        "category": "Google Clone built with ReactJS",
+        "image": "google-clone.png",
+        "url": "https://clone-f1bd4.web.app/"
       },
       {
         "title": "Airbnb Clone",

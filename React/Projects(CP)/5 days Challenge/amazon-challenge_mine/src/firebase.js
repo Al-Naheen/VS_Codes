@@ -1,15 +1,15 @@
 import firebase from 'firebase'
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyAW0kwwH5Ve3xi2nsQM0Ghi8clM6lNWlEg",
-    authDomain: "challenge-e1137.firebaseapp.com",
-    databaseURL: "https://challenge-e1137.firebaseio.com",
-    projectId: "challenge-e1137",
-    storageBucket: "challenge-e1137.appspot.com",
-    messagingSenderId: "62202544453",
-    appId: "1:62202544453:web:83069705d3fdc74165fe2c",
-    measurementId: "G-H2WQD9CMLG"
-  };
+  apiKey: "AIzaSyCXWNZZZ8RgusTXtfcjnDkG-icIytoJJiQ",
+  authDomain: "clone-be743.firebaseapp.com",
+  projectId: "clone-be743",
+  storageBucket: "clone-be743.appspot.com",
+  messagingSenderId: "246686819607",
+  appId: "1:246686819607:web:1388d0f9c8904f20f74352",
+  measurementId: "G-N7YDJMBNNS"
+};
 
 const firebaseApp = firebase.initializeApp(firebaseConfig)
 const db = firebaseApp.firestore()

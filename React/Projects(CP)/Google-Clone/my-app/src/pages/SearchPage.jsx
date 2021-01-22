@@ -1,25 +1,23 @@
 import React from "react";
 import "./SearchPage.css";
 import { useStateValue } from "../StateProvider";
-import Response from "../response";
 import useGoogleSearch from "../useGoogleSearch";
 import { Link } from "react-router-dom";
-import Search from "../Search";
+import Search from "./Search";
 import SearchIcon from "@material-ui/icons/Search";
 import DescriptionIcon from "@material-ui/icons/Description";
 import ImageIcon from "@material-ui/icons/Image";
 import LocalOfferIcon from "@material-ui/icons/LocalOffer";
 import RoomIcon from "@material-ui/icons/Room";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import Response from "../response";
 
 function SearchPage() {
-  const [{ term }, dispatch] = useStateValue();
-  //LIVE API call
+  const [{ term }] = useStateValue();
   const { data } = useGoogleSearch(term);
-
-  //const data = Response;
-
-  console.log(data);
+  
+  // const data = Response;
+  // console.log(data);
 
   return (
     <div className="searchPage">
@@ -31,10 +29,8 @@ function SearchPage() {
             alt=""
           />
         </Link>
-
-        <div className="searchPage__headerbody">
+        <div className="searchPage__headerBody">
           <Search hideButtons />
-
           <div className="searchPage__options">
             <div className="searchPage__optionsLeft">
               <div className="searchPage__option">
@@ -43,28 +39,27 @@ function SearchPage() {
               </div>
               <div className="searchPage__option">
                 <DescriptionIcon />
-                <Link to="/news">News</Link>
+                <Link to="/all">News</Link>
               </div>
               <div className="searchPage__option">
                 <ImageIcon />
-                <Link to="/images">Images</Link>
+                <Link to="/all">Images</Link>
               </div>
               <div className="searchPage__option">
                 <LocalOfferIcon />
-                <Link to="/shopping">Shopping</Link>
+                <Link to="/all">shopping</Link>
               </div>
               <div className="searchPage__option">
                 <RoomIcon />
-                <Link to="/maps">maps</Link>
+                <Link to="/all">maps</Link>
               </div>
               <div className="searchPage__option">
                 <MoreVertIcon />
-                <Link to="/more">more</Link>
+                <Link to="/all">more</Link>
               </div>
             </div>
-
             <div className="searchPage__optionsRight">
-              <div className="searchPage__options">
+              <div className="searchPage__option">
                 <Link to="/settings">Settings</Link>
               </div>
               <div className="searchPage__option">
@@ -74,26 +69,27 @@ function SearchPage() {
           </div>
         </div>
       </div>
-
+      {/* true / term */}
       {term && (
         <div className="searchPage__results">
           <p className="searchPage__resultCount">
-            About {data?.searchInformation.formattedTotalResults} results (
-            {data?.searchInformation.formattedSearchTime}seconds) for {term}
+            About {data?.searchInformation.formattedTotalResults} results ({" "}
+            {data?.searchInformation.formattedSearchTime}) for {term}
           </p>
-
           {data?.items.map((item) => (
-            <div key={item.cacheId} className="searchPage__results">
-              <a className="searchPage__resultLink " href="item.link">
-                {item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0].src && (
-                  <img className="searchPage__resultImage" src={
-                    item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src
-                  }
-                    alt=""
-                  />
-                )}
-                {item.displayLink}</a>
-              <a className="searchPage__resultTitle" href={item.link}>
+            <div className="searchPage__result">
+              <a className="searchPage__resultLink" href={item.link}>
+                {item.pagemap?.cse_image?.length > 0 &&
+                  item.pagemap?.cse_image[0]?.src && (
+                    <img
+                      className="searchPage__resultImage"
+                      src={item.pagemap?.cse_image[0]?.src}
+                      alt=""
+                    />
+                  )}
+                {item.displayLink}
+              </a>
+              <a href={item.link} className="searchPage__resultTitle">
                 <h2>{item.title}</h2>
               </a>
               <p className="searchPage__resultSnippet">{item.snippet}</p>
