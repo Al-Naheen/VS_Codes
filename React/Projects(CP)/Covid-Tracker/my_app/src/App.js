@@ -121,7 +121,6 @@ const App = () => {
           zoom={mapZoom}
         />
       </div>
-      
       <Card className="app__right">
         <CardContent>
           <div className="app__information">

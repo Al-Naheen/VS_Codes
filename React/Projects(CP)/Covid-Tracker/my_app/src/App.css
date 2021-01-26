@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
 * {
   margin: 0;
 }
@@ -25,8 +27,10 @@ body {
 }
 
 .app__header > h1 {
+  font-weight: 500;
   color: #fc3c3c;
-  font-size: 2rem;
+  font-size: 2.7rem;
+  font-family: 'Metal Mania', cursive;
 }
 
 .app__stats {
@@ -35,8 +39,7 @@ body {
 }
 
 .app__left {
-  flex: 90%;
-  padding: 20px;
+  flex: 0.9;
 }
 
 .app__information > h3 {

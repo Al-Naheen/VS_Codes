@@ -78,6 +78,12 @@
         "url": "https://clone-f1bd4.web.app/"
       },
       {
+        "title": "Covid-19 Tracker",
+        "category": "Covid-19 Tracker built with ReactJS",
+        "image": "covid.png",
+        "url": "https://covid-tracker-4136a.web.app/"
+      },
+      {
         "title": "Airbnb Clone",
         "category": "Airbnb Clone built with ReactJS",
         "image": "airbnb-clone.png",

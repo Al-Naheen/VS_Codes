@@ -6,7 +6,7 @@ class Portfolio extends Component {
     if (this.props.data) {
       if (this.props.data.projects) {
         var projects = this.props.data.projects.map(function (projects) {
-          var projectImage = 'images/portfolio/' + projects.image;
+          var projectImage = `images/portfolio/${projects.image}`;
           return <div key={projects.title} className="columns portfolio-item">
             <div className="item-wrap">
               <a href={projects.url} target='_blank' title={projects.title}>
@@ -44,4 +44,4 @@ class Portfolio extends Component {
   }
   }
 
-export default Portfolio
+export default Portfolio;
