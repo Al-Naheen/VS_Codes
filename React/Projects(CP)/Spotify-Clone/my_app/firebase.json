@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "spotify-clone-451ea",
     "public": "build",
     "ignore": [
       "firebase.json",

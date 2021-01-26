@@ -2,7 +2,10 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 // Replace with your app's client ID, redirect URI and desired scopes
 const clientId = "be58b9ff497f4a06b3bbf0195f9b9772";
-const redirectUri = "http://localhost:3000/";
+
+// I have changed this redirectUri from http://localhost:3000/ to https://spotify-clone-451ea.web.app/
+// then -- https://developer.spotify.com/dashboard/ e jeye ei project er settings e gie 'redirectURL change korsi from http://localhost:3000/ to https://spotify-clone-451ea.web.app/'
+const redirectUri = "https://spotify-clone-451ea.web.app/";
 const scopes = [
   "user-read-currently-playing",
   "user-read-recently-played",

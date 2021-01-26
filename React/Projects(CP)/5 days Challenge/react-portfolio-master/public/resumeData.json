@@ -84,22 +84,28 @@
         "url": "https://covid-tracker-4136a.web.app/"
       },
       {
-        "title": "Airbnb Clone",
-        "category": "Airbnb Clone built with ReactJS",
-        "image": "airbnb-clone.png",
-        "url": "https://compassionate-jepsen-60dff5.netlify.app"
-      },
-      {
         "title": "Discord Clone",
         "category": "Discord Clone built with ReactJS",
         "image": "discord-clone.png",
         "url": "https://discord-clone-9025e.web.app/"
       },
       {
+        "title": "Airbnb Clone",
+        "category": "Airbnb Clone built with ReactJS",
+        "image": "airbnb-clone.png",
+        "url": "https://compassionate-jepsen-60dff5.netlify.app"
+      },
+      {
         "title": "Messenger Clone",
         "category": "Facebook-Messenger Clone built with ReactJS",
         "image": "messenger.png",
         "url": "https://facebook-messenger-clone-c1d9d.web.app/"
+      },
+      {
+        "title": "Spotify Clone",
+        "category": "Spotify Clone Clone built with ReactJS",
+        "image": "spotify.png",
+        "url": "https://spotify-clone-451ea.web.app/"
       },
       {
         "title": "31 JS-Projects",
