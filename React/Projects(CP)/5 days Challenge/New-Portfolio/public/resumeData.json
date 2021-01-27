@@ -1,0 +1,139 @@
+{
+  "main": {
+    "name": "Al Naheen",
+    "occupation": "ReactJS Developer & JavaScript Programmer",
+    "description": "A high school kid with a Dream to make a huge change in the world with my Programming skills",
+    "image": "nah.png",
+    "bio": "My name is Al Naheen Ibna Siddique. I'm a Full Stack Web Developer. Currently I'm studying in a high school in Dhaka, Bangladesh.",
+    "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
+    "email": "alnaheen543@gmail.com",
+    "phone": "+880 153 172 5126",
+    "address": {
+      "street": "Sector-6, Uttara",
+      "city": "Dhaka",
+      "state": "Bangladesh"
+    },
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/alnaheen",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/al_naheen/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/Al-Naheen",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Want to Build & Maintain a huge website...? I have great grip on Front-End ( HTML5, CSS3, SASS, JavaScript, ReactJS, BootStrap... ) & Backend ( Firebase, NodeJS, MongoDb, Django ). Don't just believe my words. Firstly give me a chance and then decide whether you want me or not.",
+    "education": [
+      {
+        "school": "Rajuk Uttara Model College",
+        "degree": "High School Student",
+        "graduated": "Not yet graduated",
+        "description": "I have a lot of interest in learning and exploring new things."
+      }
+    ],
+    "work": [
+      {
+        "company": "Amader Delivery",
+        "title": "Front-End Developer",
+        "years": "November, 2020 - Present",
+        "description": "I am a ReactJS Developer at Amader Delivery. This is an ecommerce company from where you can buy products online"
+      }
+    ],
+    "skills": [
+      {
+        "name": "ReactJs",
+        "level": "100%"
+      },
+      {
+        "name": "Python",
+        "level": "95%"
+      },
+      {
+        "name": "Git",
+        "level": "75%"
+      },
+      {
+        "name": "JavaScript",
+        "level": "100%"
+      },
+      {
+        "name": "MongoDB",
+        "level": "80%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Zoom Clone with NodeJS",
+        "category": "Zoom Clone built with NodeJS",
+        "image": "Amazon.png",
+        "url": "https://www.youtube.com/watch?v=ZVznzY7EjuY"
+      },
+      {
+        "title": "Robinhood Clone",
+        "category": "Robinhood Clone built with ReactJS",
+        "image": "download.jpg",
+        "url": "https://instagram-clone-325b6.web.app/"
+      },
+      {
+        "title": "NetFlix Clone",
+        "category": "NetFlix Clone built with ReactJS",
+        "image": "netflix.png",
+        "url": "https://www.youtube.com/watch?v=g8yGxDMyGiE"
+      },
+      {
+        "title": "Google Clone",
+        "category": "Google Clone built with ReactJS",
+        "image": "google-clone.png",
+        "url": "https://clone-f1bd4.web.app/"
+      },
+      {
+        "title": "Covid-19 Tracker",
+        "category": "Covid-19 Tracker built with ReactJS",
+        "image": "covid.png",
+        "url": "https://covid-tracker-4136a.web.app/"
+      },
+      {
+        "title": "Discord Clone",
+        "category": "Discord Clone built with ReactJS",
+        "image": "discord-clone.png",
+        "url": "https://discord-clone-9025e.web.app/"
+      },
+      {
+        "title": "Airbnb Clone",
+        "category": "Airbnb Clone built with ReactJS",
+        "image": "airbnb-clone.png",
+        "url": "https://compassionate-jepsen-60dff5.netlify.app"
+      },
+      {
+        "title": "Messenger Clone",
+        "category": "Facebook-Messenger Clone built with ReactJS",
+        "image": "messenger.png",
+        "url": "https://facebook-messenger-clone-c1d9d.web.app/"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
+        "user": "Kareem Abdul Jabbar"
+      },
+      {
+        "text": "That Naz must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "user": "Steve Wozniak... impersonator"
+      }
+    ]
+  }
+}
