@@ -15,6 +15,11 @@
     },
     "social": [
       {
+        "name": "youtube",
+        "url": "https://www.youtube.com/channel/UC9FEh04-jfU_d6UJHNF0QKA",
+        "className": "fa fa-youtube"
+      },
+      {
         "name": "facebook",
         "url": "https://www.facebook.com/alnaheen",
         "className": "fa fa-facebook"
@@ -46,7 +51,7 @@
         "company": "Amader Delivery",
         "title": "Front-End Developer",
         "years": "November, 2020 - Present",
-        "description": "I am a ReactJS Developer at Amader Delivery. This is an ecommerce company from where you can buy products online"
+        "description": "I am a Frontend ReactJS Developer at Amader Delivery. This is an online Delivery Management Service."
       }
     ]
   },
@@ -59,10 +64,10 @@
         "url": "https://clone-be743.web.app/"
       },
       {
-        "title": "Instagram Clone",
-        "category": "Instagram Clone built with ReactJS",
-        "image": "ins.png",
-        "url": "https://instagram-clone-325b6.web.app/"
+        "title": "Facebook Clone",
+        "category": "Facebook Clone built with ReactJS",
+        "image": "facebook.png",
+        "url": "https://facebook-clone-d8951.web.app/"
       },
       {
         "title": "Netflix Clone",
@@ -81,6 +86,12 @@
         "category": "Covid-19 Tracker built with ReactJS",
         "image": "covid.png",
         "url": "https://covid-tracker-4136a.web.app/"
+      },
+      {
+        "title": "Instagram Clone",
+        "category": "Instagram Clone built with ReactJS",
+        "image": "ins.png",
+        "url": "https://instagram-clone-325b6.web.app/"
       },
       {
         "title": "Discord Clone",
@@ -122,7 +133,7 @@
         "user": "Martin Fowler"
       },
       {
-        "text": "That Al Naheen is one of the most brilliant developers I've ever met! It is surprising that nobody has hired him yet. Hey you, you should hire this guy, he may be a high school kid and have less job experience but I am confident that he will be one of your best developers in no time!",
+        "text": "That Al Naheen is one of the most brilliant developers I've ever met! It's right that he is a high school kid and have less job experience but I am confident that he will be one of your best developers in no time!",
         "user": "Dilara Naznin... mom"
       }
     ]
