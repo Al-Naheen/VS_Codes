@@ -1,0 +1,16 @@
+@mixin flexCenter($direction, $background) {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  background: $background;
+}
+
+@mixin btnStyle($bgColor, $fontSize, $width) {
+  background-color: $bgColor;
+  font-size: $fontSize;
+  padding: 20px 30px;
+  color: $btnText;
+  width: $width;
+}

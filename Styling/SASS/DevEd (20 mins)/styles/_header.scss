@@ -1,0 +1,19 @@
+header {
+  @include flexCenter(column, lightblue);
+
+  color: $textColor;
+
+  button {
+    @include btnStyle($primaryBtn, 25px, 200px);
+    // background: $primaryBtn;
+    // color: $btnText;
+
+    &:hover {
+      background: rgb(43, 65, 116);
+    }
+
+    &::after {
+      content: ' chica';
+    }
+  }
+}

@@ -1,0 +1,105 @@
+video - https://www.youtube.com/watch?v=Mos5QJAje28&t=1517s
+
+1. Main Topics (10)
+    a. Advance React Data Rendering
+    b. Proper File & Folder Structure **
+    c. Complex State Management  using Redux
+    d. Work with HTTP request and process response effectively
+    e. Live Debugging...whoop!!!
+    f. YouTube API
+    g. O-Auth | Firebase Auth
+    h. Super Responsive Design (react-BootStrap)
+    i. Sass , Building Logic & More
+    j. intro.js - I have to Manually Add this
+    
+2. Video Contents 
+    A. Project Introduction
+    B. Project Set up & UI design using Sass
+        a. Project Setup
+        b. Layout Setup
+        c. Design Header
+        d. Design Sidebar
+        e. Functionality of Sidebar
+        f. Design Categories Bar
+        g. Design Video 
+        h. Design Login Screen
+    C. React Router & Firebase Setup
+    D. Redux & Firebase Auth
+        a. Introduction
+        b. Redux Flow
+        c. Setup Redux
+        d. Firebase Auth Setup
+        e. Fireabse Auth Logic with redux
+        f. Private Route
+        g. Session Storage & Local Storage
+        h. Log Out
+    E. API Key & Popular Videos
+    F. Categories Bar
+    G. Infinite Scroll | Loading Skeleton | Lazy Load Images
+        a. Intro
+        b. Infinite Scroll(including Redux)
+        c. React Loading Skeleton
+        d. React Lazy Load Images
+    H. UI Design : Watch Screen
+    I. Video Details
+    J. Channel Details
+    K. Channel Details
+    L. Related Videos
+    M. Search Screen
+    N. Subscription Screen
+    O. Channel Screen
+    P. Deployment : React to Firebase using GitHub Actions | CI/CD
+    Q. Project Refactor & Wrap Up
+
+    
+3. Prerequisites (3)
+    a. React Basics
+    b. Redux (DevEd)
+    c. SASS (DevEd)
+
+4. npm-packages (19)
+    a. "axios": "^0.21.0",
+    b. "bootstrap": "^4.5.3",
+    c. "firebase": "^8.2.0",
+    d. "moment": "^2.29.1",
+    e. "node-sass": "^4.14.1",
+    f. "numeral": "^2.0.6",
+    g. "react-bootstrap": "^1.4.0",
+    h. "react-helmet": "^6.1.0",
+    i. "react-icons": "^4.1.0",
+    j. "react-infinite-scroll-component": "^5.1.0",
+    k. "react-infinite-scroller": "^1.2.4",
+    l. "react-lazy-load-image-component": "^1.5.1",
+    m. "react-loading-skeleton": "^2.1.1",
+    n. "react-redux": "^7.2.2",
+    o. "react-router-dom": "^5.2.0",
+    p. "react-show-more-text": "^1.4.6",
+    q. "redux": "^4.0.5",
+    r. "redux-devtools-extension": "^2.13.8",
+    s. "redux-thunk": "^2.3.0",
+
+5. TimeStamps (23) -- kind of Unnecessary
+    a. 0:00​    - Introduction
+    b. 8:43​    - Project Set up
+    c. 12:05​   - Home Screen UI*
+    d. 1:13:09​ - React Router Set up
+    e. 1:23:16​ -  Redux Set up
+    f. 1:31:25​ - Firebase Auth
+    g. 2:11:10​ - Private Route
+    h. 2:15:31​ - Most Popular Videos
+    i. 2:45:00​ - Categories Bar
+    j. 2:54:06​ - Infinite Scroll | Pagination
+    k. 3:05:22​ - Loading Skeleton
+    l. 3:12:23​ - Lazy Load Image
+    m. 3:18:00​ - Watch Screen
+    n. 3:58:22​ - Video Player & Details
+    o. 4:14:30​ - Channel Details 
+    p. 4:32:30​ - Comments
+    q. 4:51:36​ - Related Videos
+    r. 5:09:30​ - Search Screen
+    s. 5:28:54​ - Subscription Screen
+    t. 5:49:40​ - Videos of Channel
+    u. 6:11:09​ - CI/CD using github actions
+    v. 6:30:44​ - Refractor & Wrap Up
+    w. 6:42:45​ - Thank You & What's next:)
+    // will update soon

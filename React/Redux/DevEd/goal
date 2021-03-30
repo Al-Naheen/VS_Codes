@@ -1,0 +1,12 @@
+video - https://www.youtube.com/watch?v=CVpUuw9XSjY&t=453s
+
+1. Moving up the State
+2. (npx create-reacta-app .) then (npm i redux react-redux)
+3. Store*
+4. Action*
+5. Reducer*
+6. Dispatch*
+7. create this Store
+8. create an Action
+9. combine Reducers
+10. Extract is Logged in

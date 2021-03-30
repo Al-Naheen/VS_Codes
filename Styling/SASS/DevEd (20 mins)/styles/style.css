@@ -1,0 +1,73 @@
+header, .bye {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: lightblue;
+  color: #2b2b2b;
+}
+
+header button, .bye button {
+  background-color: #385599;
+  font-size: 25px;
+  padding: 20px 30px;
+  color: white;
+  width: 200px;
+}
+
+header button:hover, .bye button:hover {
+  background: #2b4174;
+}
+
+header button::after, .bye button::after {
+  content: ' chica';
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #dce8ec;
+}
+
+.contact button {
+  background-color: #412f75;
+  font-size: 30px;
+  padding: 20px 30px;
+  color: white;
+  width: 300px;
+}
+
+.bye {
+  background: #a5bfc7;
+  height: 75vh;
+}
+/*# sourceMappingURL=style.css.map */
