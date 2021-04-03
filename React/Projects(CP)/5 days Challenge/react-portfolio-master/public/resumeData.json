@@ -58,6 +58,12 @@
   "portfolio": {
     "projects": [
       {
+        "title": "YouTube Clone",
+        "category": "YouTube Clone built with ReactJS with User Authentication &  Payment Services",
+        "image": "yt.png",
+        "url": "https://yt-clone-543.web.app/"
+      },
+      {
         "title": "Amazon Clone",
         "category": "Amazon Clone built with ReactJS with User Authentication &  Payment Services",
         "image": "Amazon.png",

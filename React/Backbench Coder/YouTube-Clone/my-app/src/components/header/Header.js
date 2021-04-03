@@ -1,40 +1,57 @@
-import React from "react"
-import "./_header.scss"
+import React, { useState } from 'react'
+import './_header.scss'
 
-import { FaBars } from "react-icons/fa"
-import { AiOutlineSearch } from "react-icons/ai"
-import { MdNotifications, MdApps } from "react-icons/md"
+import { FaBars } from 'react-icons/fa'
+import { AiOutlineSearch } from 'react-icons/ai'
+import { MdNotifications, MdApps } from 'react-icons/md'
+import { Link, useHistory } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const Header = ({ handleToggleSidebar }) => {
+   const [input, setInput] = useState('')
+
+   const history = useHistory()
+
+   const handleSubmit = e => {
+      e.preventDefault()
+
+      history.push(`/search/${input}`)
+   }
+   const user = useSelector(state => state.auth?.user)
+
    return (
-      <div className="header ">
+      <div className='header '>
          <FaBars
-            className="header__menu"
+            className='header__menu'
             size={26}
             onClick={() => handleToggleSidebar()}
          />
-
-         <img
-            src="images/ytLogo.png"
-            alt=""
-            className="header__logo"
-         />
-
-         <form>
-            <input type="text" placeholder="Search" />
-            <button type="submit">
+         <Link to='/'>
+            <div>
+               <img
+                  src="images/ytLogo.png"
+                  alt=""
+                  className="header__logo"
+               />
+            </div>
+         </Link>
+         <form onSubmit={handleSubmit}>
+            <input
+               type='text'
+               placeholder='Search'
+               value={input}
+               onChange={e => setInput(e.target.value)}
+            />
+            <button type='submit'>
                <AiOutlineSearch size={22} />
             </button>
          </form>
 
-         <dic className="header__icons">
+         <div className='header__icons'>
             <MdNotifications size={28} />
             <MdApps size={28} />
-            <img
-               src="https://www.pngkey.com/png/full/114-1149878_setting-user-avatar-in-specific-size-without-breaking.png"
-               alt="avatar"
-            />
-         </dic>
+            <img src={user?.photoURL} alt='avatar' />
+         </div>
       </div>
    )
 }
