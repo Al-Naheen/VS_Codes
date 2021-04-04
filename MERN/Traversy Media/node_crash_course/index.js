@@ -9,6 +9,42 @@ const Person = require('./person');
 // console.log(person.hola);
 // console.log(person.list);
 
+// // I create the server by my own
+// const server = http.createServer((req, res) => {
+//     switch (req.url) {
+//         case '/':
+//             fs.readFile(path.join(__dirname, '/public', 'index.html'), 'utf8', (err, data) => {
+//                 if (err) throw err;
+
+//                 res.end(data)
+//             })
+//             break;
+//         case '/about':
+//             fs.readFile(path.join(__dirname, '/public', 'about.html'), 'utf8', (err, data) => {
+//                 if (err) throw err;
+
+//                 res.end(data)
+//             })
+//             break;
+//         default:
+//             fs.readFile(path.join(__dirname, '/public', '404.html'), 'utf8', (err, data) => {
+//                 if (err) throw err;
+
+//                 res.end(data)
+//             })
+//             break;
+//     }
+// })
+// const PORT = process.env.PORT || 5000;
+// server.listen(PORT, () => {
+//     console.log(`server is running on ${PORT}`);
+// })
+
+
+
+
+
+
 const server = http.createServer((req, res) => {
     // if (req.url === '/') {
     //   fs.readFile(
@@ -30,7 +66,7 @@ const server = http.createServer((req, res) => {
     //   res.end(JSON.stringify(users));
     // }
 
-    // Build file path
+    // 1. Build file path
     let filePath = path.join(
         __dirname,
         "public",
@@ -43,7 +79,7 @@ const server = http.createServer((req, res) => {
     // Initial content type
     let contentType = "text/html";
 
-    // Check ext and set content type
+    // 2. Check ext and set content type
     switch (extname) {
         case ".js":
             contentType = "text/javascript";
@@ -62,13 +98,13 @@ const server = http.createServer((req, res) => {
             break;
     }
 
-    // Check if contentType is text/html but no .html file extension
+    // 3. Check if contentType is text/html but no .html file extension
     if (contentType == "text/html" && extname == "") filePath += ".html";
 
     // log the filePath
     console.log(filePath);
 
-    // Read File
+    // 4. Read File
     fs.readFile(filePath, (err, content) => {
         if (err) {
             if (err.code == "ENOENT") {
