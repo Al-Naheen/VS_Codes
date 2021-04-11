@@ -1,0 +1,33 @@
+.selectContainer {
+  position: relative;
+}
+
+.select {
+  background: transparent;
+  border: none;
+  padding: 5px;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.icon {
+  color: var(--header-color);
+  position: absolute;
+  right: 0;
+  top: 7px;
+  width: 15px;
+  height: 15px;
+}
+
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+  display: none;
+}

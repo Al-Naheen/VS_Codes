@@ -1,0 +1,11 @@
+video - https://youtu.be/gzdQDxzW2Tw
+
+1. MERN
+2. Mongoose
+3. Real-Time DataBase(but mongodb isn't a real-time db...so we have to make it real-time manually)
+    -- Change Stream on mongodb
+    -- use Pusher on mongodb
+4. Firebase
+    -- auth
+    -- hosting(frontend)
+5. Heroku(backend hsoting)

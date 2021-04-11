@@ -1,0 +1,24 @@
+video - https://youtu.be/L72fhGm1tfE
+
+1. what is Express?
+2. why use Express??
+3. The basic syntax of a web server:
+4. Basic Route Handling
+5. Express middleware
+6. setting up the environment tools
+7. creating a basic Express server 
+8. Create a Route
+9. static folder
+10. creating a simple REST API
+11. MiddleWare
+12. GET Request
+13. express route
+14. POST Request
+15. PUT Request
+16. delete Request
+17. rendering templates
+
+
+
+and this is a README walkthrough I made it while watching as a reference. 
+https://github.com/osamagamal7/express_crash_course

@@ -1,7 +1,7 @@
 {
   "main": {
     "name": "Al Naheen",
-    "occupation": "ReactJS Developer & JavaScript Programmer",
+    "occupation": "ReactJS, MERN Stack & Flutter Developer",
     "description": "A high school kid with a Dream to make a huge change in the world with my Programming skills",
     "image": "nah.png",
     "bio": "My name is Al Naheen Ibna Siddique. I'm a Full Stack Web Developer. Currently I'm studying in a high school in Dhaka, Bangladesh.",
@@ -37,7 +37,7 @@
     ]
   },
   "resume": {
-    "skillmessage": "Want to Build & Maintain a huge website...? I have great grip on Front-End ( HTML5, CSS3, SASS, JavaScript, ReactJS, BootStrap... ) & Backend ( Firebase, NodeJS, MongoDb, Django ). Don't just believe my words. Firstly give me a chance and then decide whether you want me or not.",
+    "skillmessage": "Want to Build & Maintain a huge website or mobile app...? I have great grip on Front-End ( HTML5, CSS3, SASS, JavaScript, ReactJS, BootStrap... ), Backend ( Firebase, NodeJS, MongoDb ) & Mobile Dev ( Dart, Flutter ). Don't just believe my words. Firstly give me a chance and then decide whether you want me or not.",
     "education": [
       {
         "school": "Rajuk Uttara Model College",
@@ -50,7 +50,7 @@
       {
         "company": "Amader Delivery",
         "title": "Front-End Developer",
-        "years": "November, 2020 - Present",
+        "years": "November, 2020 - March, 2021",
         "description": "I am a Frontend ReactJS Developer at Amader Delivery. This is an online Delivery Management Service."
       }
     ]
@@ -58,16 +58,16 @@
   "portfolio": {
     "projects": [
       {
-        "title": "YouTube Clone",
-        "category": "YouTube Clone built with ReactJS with User Authentication &  Payment Services",
-        "image": "yt.png",
-        "url": "https://yt-clone-543.web.app/"
-      },
-      {
         "title": "Amazon Clone",
         "category": "Amazon Clone built with ReactJS with User Authentication &  Payment Services",
         "image": "Amazon.png",
         "url": "https://clone-be743.web.app/"
+      },
+      {
+        "title": "YouTube Clone",
+        "category": "YouTube Clone built with ReactJS with User Authentication &  Payment Services",
+        "image": "yt.png",
+        "url": "https://yt-clone-543.web.app/"
       },
       {
         "title": "Facebook Clone",
@@ -76,10 +76,16 @@
         "url": "https://facebook-clone-d8951.web.app/"
       },
       {
-        "title": "Netflix Clone",
-        "category": "Netflix Clone built with ReactJS",
-        "image": "netflix.png",
-        "url": "https://netflix-clone-71286.web.app/"
+        "title": "Google-DRIVE Clone",
+        "category": "Google Drive Clone built with ReactJS",
+        "image": "drive.png",
+        "url": "https://clone-fee96.web.app/"
+      },
+      {
+        "title": "Instagram Clone",
+        "category": "Instagram Clone built with ReactJS",
+        "image": "ins.png",
+        "url": "https://instagram-clone-325b6.web.app/"
       },
       {
         "title": "Google Clone",
@@ -88,16 +94,16 @@
         "url": "https://clone-f1bd4.web.app/"
       },
       {
+        "title": "Netflix Clone",
+        "category": "Netflix Clone built with ReactJS",
+        "image": "netflix.png",
+        "url": "https://netflix-clone-71286.web.app/"
+      },
+      {
         "title": "Covid-19 Tracker",
         "category": "Covid-19 Tracker built with ReactJS",
         "image": "covid.png",
         "url": "https://covid-tracker-4136a.web.app/"
-      },
-      {
-        "title": "Instagram Clone",
-        "category": "Instagram Clone built with ReactJS",
-        "image": "ins.png",
-        "url": "https://instagram-clone-325b6.web.app/"
       },
       {
         "title": "Discord Clone",
@@ -112,17 +118,22 @@
         "url": "https://compassionate-jepsen-60dff5.netlify.app"
       },
       {
-        "title": "Messenger Clone",
-        "category": "Facebook-Messenger Clone built with ReactJS",
-        "image": "messenger.png",
-        "url": "https://facebook-messenger-clone-c1d9d.web.app/"
+        "title": "Stock Exchange",
+        "category": "Stock Exchange App built with ReactJS",
+        "image": "shtock.png",
+        "url": "https://shtock-5841.web.app/"
       },
-      
       {
         "title": "Spotify Clone",
         "category": "Spotify Clone Clone built with ReactJS",
         "image": "spotify.png",
         "url": "https://spotify-clone-451ea.web.app/"
+      },
+      {
+        "title": "Messenger Clone",
+        "category": "Facebook-Messenger Clone built with ReactJS",
+        "image": "messenger.png",
+        "url": "https://facebook-messenger-clone-c1d9d.web.app/"
       },
       {
         "title": "31 JS-Projects",
