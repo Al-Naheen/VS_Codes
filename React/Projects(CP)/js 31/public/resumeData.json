@@ -180,12 +180,6 @@
         "category": "30th Project built with Plain JavaScript",
         "image": "js30/30.png",
         "url": "https://30-whack-a-mole.netlify.app/"
-      },
-      {
-        "title": "Rock Paper Scissor",
-        "category": "31st Project built with Plain JavaScript",
-        "image": "Rock Paper Scissor.png",
-        "url": "http://rock.c1.biz/"
       }
     ]
   }

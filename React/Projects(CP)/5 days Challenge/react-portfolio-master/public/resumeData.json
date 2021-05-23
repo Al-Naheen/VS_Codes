@@ -56,7 +56,7 @@
     ]
   },
   "portfolio": {
-    "projects": [
+    "react": [
       {
         "title": "Amazon Clone",
         "category": "Amazon Clone built with ReactJS with User Authentication &  Payment Services",
@@ -118,6 +118,12 @@
         "url": "https://discord-clone-9025e.web.app/"
       },
       {
+        "title": "Linked In Clone",
+        "category": "Linked In Clone built with ReactJS",
+        "image": "linkedin.png",
+        "url": "https://linkedin-clone-cff40.web.app/"
+      },
+      {
         "title": "Airbnb Clone",
         "category": "Airbnb Clone built with ReactJS",
         "image": "airbnb-clone.png",
@@ -140,14 +146,42 @@
         "category": "Facebook-Messenger Clone built with ReactJS",
         "image": "messenger.png",
         "url": "https://facebook-messenger-clone-c1d9d.web.app/"
+      }
+    ],
+    "plainJS": [
+      {
+        "title": "30 JS-Projects",
+        "category": "30 Projects built with Plain JavaScript",
+        "image": "js31.png",
+        "url": "https://plain-js30.web.app/"
       },
       {
-        "title": "31 JS-Projects",
-        "category": "31 Projects built with Plain JavaScript",
-        "image": "js31.png",
-        "url": "https://all-31-plainjs-projects.netlify.app/"
+        "title": "Rock Paper Scissor",
+        "category": "Rock Paper Scissor built with Plain JavaScript",
+        "image": "rock-paper-scissor.png",
+        "url": "https://rock-paper-scissor-5841.netlify.app/"
+      },
+      {
+        "title": "CheatSheet Template",
+        "category": "CheatSheet Template built with Plain JavaScript",
+        "image": "cheatsheet.png",
+        "url": "https://cheatsheet-template.netlify.app/"
+      },
+      {
+        "title": "Dragon Game",
+        "category": "Dragon Game built with Plain JavaScript",
+        "image": "dragon.png",
+        "url": "https://dragon-game-5841.netlify.app/"
+      },
+      {
+        "title": "Snake Game",
+        "category": "Snake Game built with Plain JavaScript",
+        "image": "snake-game.png",
+        "url": "https://snake-game-5841.netlify.app/"
       }
-    ]
+    ],
+    "flutter": [],
+    "mern": []
   },
   "testimonials": {
     "testimonials": [
