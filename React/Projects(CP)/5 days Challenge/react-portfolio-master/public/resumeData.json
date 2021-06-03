@@ -1,10 +1,10 @@
 {
   "main": {
     "name": "Al Naheen",
-    "occupation": "ReactJS, MERN Stack & Flutter Developer",
-    "description": "A high school kid with a Dream to make a huge change in the world with my Programming skills",
+    "occupation": "MERN Stack & Flutter Developer",
+    "description": "A crazy kid with a Dream to make a huge change in the world with my knowledge & Programming skills",
     "image": "nah.png",
-    "bio": "My name is Al Naheen Ibna Siddique. I'm a Full Stack Web Developer. Currently I'm studying in a high school in Dhaka, Bangladesh.",
+    "bio": "My name is Al Naheen Ibna Siddique. I'm a Full Stack Web Developer & Mobile Developer. Currently I'm studying in a high school in Dhaka, Bangladesh.",
     "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
     "email": "alnaheen543@gmail.com",
     "phone": "+880 153 172 5126",
@@ -37,7 +37,7 @@
     ]
   },
   "resume": {
-    "skillmessage": "Want to Build & Maintain a huge website or mobile app...? I have great grip on Front-End ( HTML5, CSS3, SASS, JavaScript, ReactJS, BootStrap... ), Backend ( Firebase, NodeJS, MongoDb ) & Mobile Dev ( Dart, Flutter ). Don't just believe my words. Firstly give me a chance and then decide whether you want me or not.",
+    "skillmessage": "Want to Build & Maintain a huge website or mobile app? I have great grip on Front-End (JavaScript, ReactJs, NextJs), Backend (NodeJs, Firebase) & Mobile Dev (Dart, Flutter). Don't just believe my words. Firstly give me a chance and then decide whether you want me or not.",
     "education": [
       {
         "school": "Rajuk Uttara Model College",
