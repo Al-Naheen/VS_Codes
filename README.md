@@ -1,5 +1,5 @@
 
-# Testing README.md File
+# Testing README.so File
 
 A brief description of what this project does and who it's for
 
@@ -14,8 +14,8 @@ A brief description of what this project does and who it's for
 Add badges from somewhere like: [shields.io](https://shields.io/)
 
 [![MIT License](https://source.unsplash.com/400x200/?nature,water)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
-[![GPLv3 License](https://source.unsplash.com/400x200/?code)](https://opensource.org/licenses/)
-[![AGPL License](https://source.unsplash.com/400x200/?water)](http://www.gnu.org/licenses/agpl-3.0)
+[![GPLv3 License](https://source.unsplash.com/400x200/?code,computer)](https://opensource.org/licenses/)
+[![AGPL License](https://source.unsplash.com/400x200/?water,green)](http://www.gnu.org/licenses/agpl-3.0)
 
   
 ## Usage/Examples -- Two Sum
