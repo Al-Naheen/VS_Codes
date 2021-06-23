@@ -7,10 +7,10 @@ class Portfolio extends Component {
     if (portfolioData) {
       if (portfolioData.react) {
         var react = portfolioData.react.map(function (projects) {
-          var projectImage = 'images/portfolio/' + projects.image;
+          // var projectImage = 'images/portfolio/' + projects.image;
           return <div key={projects.title} className="columns portfolio-item">
             <div className="item-wrap">
-              <img alt={projects.title} src={projectImage} />
+              <img alt={projects.title} src={projects.image} />
               <a href={projects.url} target='_blank' title={projects.title}>
                 <div className="overlay">
                   <div className="portfolio-item-meta">
@@ -25,10 +25,10 @@ class Portfolio extends Component {
         })
       } if (portfolioData.plainJS) {
         var plainJS = portfolioData.plainJS.map(function (projects) {
-          var projectImage = 'images/portfolio/' + projects.image;
+          // var projectImage = 'images/portfolio/' + projects.image;
           return <div key={projects.title} className="columns portfolio-item">
             <div className="item-wrap">
-              <img alt={projects.title} src={projectImage} />
+              <img alt={projects.title} src={projects.image} />
               <a href={projects.url} target='_blank' title={projects.title}>
                 <div className="overlay">
                   <div className="portfolio-item-meta">
