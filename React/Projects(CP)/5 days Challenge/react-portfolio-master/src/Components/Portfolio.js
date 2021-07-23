@@ -52,7 +52,7 @@ class Portfolio extends Component {
 
           <div className="twelve columns collapsed">
 
-            <h1 style={{ fontSize: '18px' }}>Check Out My <strong style={{ fontSize: '18px' }}><i>React Projects</i></strong></h1>
+            <h1 style={{ fontSize: '18px' }}>Check Out My <strong style={{ fontSize: '18px' }}><i>MERN Stack Projects</i></strong></h1>
 
             <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
               {react}

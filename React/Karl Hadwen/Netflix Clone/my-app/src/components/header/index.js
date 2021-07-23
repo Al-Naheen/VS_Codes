@@ -40,7 +40,8 @@ Header.Group = function HeaderGroup({ children, ...restProps }) {
 Header.Logo = function HeaderLogo({ to, ...restProps }) {
   return (
     <ReachRouterLink to={to} style={{ position: 'relative !important' }}>
-      <Logo {...restProps} style={{ position: 'static !important' }} />
+      <Logo {...restProps} style={{ position: 'static !important', left: '0 !important' }} />
+      <img src="/images/logo.png" alt="Search" style={{ display: 'none' }} />
     </ReachRouterLink>
   );
 };

@@ -60,8 +60,8 @@ class Resume extends Component {
             <p>{skillmessage}
             </p>
           </div>
-          <div className="skill__image">
-            <img style={{ marginTop: '2%' }} src="/images/weapons.png" alt="" />
+          <div className="skill__image container">
+            <img style={{ marginTop: '2%' }} src="/images/skills.png" alt="" />
           </div>
         </div>
       </section>

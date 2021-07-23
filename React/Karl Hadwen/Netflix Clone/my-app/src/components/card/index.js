@@ -1,4 +1,5 @@
 import React, { useState, useContext, createContext } from 'react';
+import Player from '../player';
 
 import {
   Container,
@@ -94,7 +95,11 @@ Card.Feature = function CardFeature({ children, category, ...restProps }) {
           </FeatureText>
         </Group>
 
-        {children}
+        {/* {children} */}
+        <Player>
+          <Player.Button />
+          <Player.Video movieTle={itemFeature.title} />
+        </Player>
       </Content>
     </Feature>
   ) : null;

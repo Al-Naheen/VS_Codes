@@ -7,8 +7,8 @@ import "./Row.css";
 const base_url = "https://image.tmdb.org/t/p/original"
 
 function Row({ title, fetchUrl, isLargeRow }) {
-    const [ movies, setMovies ] = useState([]);
-    const [ trailerUrl, setTrailerUrl ] = useState("");
+    const [movies, setMovies] = useState([]);
+    const [trailerUrl, setTrailerUrl] = useState("");
 
     // A snippet of code which runs based on a specific Condition/Variable
     useEffect(() => {
@@ -20,7 +20,9 @@ function Row({ title, fetchUrl, isLargeRow }) {
         }
         fetchData();
         // if[],  run once when the row loads, and don't run again
-    }, [ fetchUrl ]);
+    }, [fetchUrl]);
+
+
 
     const opts = {
         height: "390",
@@ -42,6 +44,8 @@ function Row({ title, fetchUrl, isLargeRow }) {
                 }).catch((error) => console.log(error));
         }
     }
+
+
 
     return (
         <div className="row">
